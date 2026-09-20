@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coach Roba | Woyyu Fitness - Personal Trainer in Addis Ababa</title>
-  <meta name="description" content="Build natural muscle, burn fat, and transform your physique with Coach Roba (Woyyu Fitness) in Addis Ababa, Ethiopia. In-person gym training, home workouts, and online coaching app.">
-  <meta name="keywords" content="Coach Roba, Woyyu Fitness, Personal Trainer Addis Ababa, Fitness Coach Ethiopia, Natural Bodybuilding Addis, Gym Trainer Bole Hawassa, Fitness App Ethiopia">
+  <meta name="description" content="Build natural muscle, burn fat, and transform your physique with Coach Roba (Woyyu Fitness) in Addis Ababa. In-person gym coaching & Woyyu Fitness App by Horan Technologies.">
+  <meta name="keywords" content="Coach Roba, Woyyu Fitness, Personal Trainer Addis Ababa, Fitness Coach Ethiopia, Woyyu Fitness App, Horan Technologies, Gym Trainer Bole">
   <meta name="geo.region" content="ET-AA">
   <meta name="geo.placename" content="Addis Ababa">
 
@@ -14,20 +14,22 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Poppins', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
           },
           colors: {
-            brandYellow: '#FFC800',
-            brandDark: '#0D0D0D',
-            brandGray: '#1A1A1A',
-            brandCard: '#242424'
+            'brand-orange': '#FF5722',
+            'brand-orange-dark': '#E64A19',
+            'brand-blue': '#0B57D0',
+            'dark-bg': '#0A0D14',
+            'dark-card': '#131924',
+            'dark-border': '#20293A'
           }
         }
       }
@@ -63,274 +65,400 @@
   }
   </script>
 </head>
-<body class="bg-brandDark text-white font-sans antialiased selection:bg-brandYellow selection:text-black">
+<body class="bg-dark-bg text-slate-100 font-sans antialiased selection:bg-brand-orange selection:text-white">
 
   <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-dark-bg/90 backdrop-blur-md border-b border-dark-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
       <a href="#" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-brandYellow text-black font-extrabold flex items-center justify-center text-xl tracking-tighter">
-          WF
+        <div class="w-10 h-10 rounded-xl bg-brand-orange flex items-center justify-center text-white text-xl shadow-lg shadow-brand-orange/20">
+          <i class="fa-solid fa-dumbbell"></i>
         </div>
         <div>
-          <span class="text-xl font-extrabold tracking-wider text-white block leading-none">COACH ROBA</span>
-          <span class="text-xs text-brandYellow font-semibold tracking-widest uppercase">Woyyu Fitness</span>
+          <span class="text-lg font-extrabold tracking-tight text-white block leading-none">WOYYU FITNESS</span>
+          <span class="text-[11px] text-brand-orange font-semibold tracking-wider uppercase">Coach Roba</span>
         </div>
       </a>
 
       <!-- Desktop Nav -->
-      <div class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider text-gray-300">
-        <a href="#about" class="hover:text-brandYellow transition-colors">About</a>
-        <a href="#app" class="hover:text-brandYellow transition-colors flex items-center gap-1">
-          <i class="fa-solid fa-mobile-screen text-brandYellow"></i> Woyyu App
+      <nav class="hidden lg:flex items-center space-x-7 text-xs font-semibold uppercase tracking-wider text-slate-300">
+        <a href="#about" class="hover:text-brand-orange transition-colors">About</a>
+        <a href="#app" class="hover:text-brand-orange transition-colors flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
+          Woyyu App
         </a>
-        <a href="#services" class="hover:text-brandYellow transition-colors">Coaching</a>
-        <a href="#testimonials" class="hover:text-brandYellow transition-colors">Results</a>
-        <a href="#contact" class="hover:text-brandYellow transition-colors">Contact</a>
-      </div>
+        <a href="#programs" class="hover:text-brand-orange transition-colors">Programs</a>
+        <a href="#locations" class="hover:text-brand-orange transition-colors">Addis Ababa Gyms</a>
+        <a href="#testimonials" class="hover:text-brand-orange transition-colors">Testimonials</a>
+        <a href="#calculator" class="hover:text-brand-orange transition-colors">Calorie Calculator</a>
+        <a href="#faq" class="hover:text-brand-orange transition-colors">FAQ</a>
+      </nav>
 
       <!-- Action Button -->
-      <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-brandYellow hover:bg-yellow-400 text-black font-bold px-5 py-2.5 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-yellow-500/20">
-        <i class="fa-brands fa-telegram text-lg"></i>
+      <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-orange-dark text-white text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-xl transition-all shadow-lg shadow-brand-orange/20 transform hover:-translate-y-0.5">
+        <i class="fa-brands fa-telegram text-base"></i>
         <span>Start Training</span>
       </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-btn" class="lg:hidden text-slate-300 text-2xl focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
-  </nav>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-dark-card border-b border-dark-border px-4 py-6 space-y-4">
+      <a href="#about" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">About</a>
+      <a href="#app" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">Woyyu App</a>
+      <a href="#programs" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">Programs</a>
+      <a href="#locations" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">Addis Ababa Gyms</a>
+      <a href="#testimonials" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">Testimonials</a>
+      <a href="#calculator" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">Calorie Calculator</a>
+      <a href="#faq" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">FAQ</a>
+      <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="inline-flex w-full justify-center items-center gap-2 bg-brand-orange text-white text-xs font-bold uppercase px-4 py-3 rounded-xl">
+        <i class="fa-brands fa-telegram"></i> Start Training
+      </a>
+    </div>
+  </header>
 
   <!-- Hero Section -->
-  <section class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-black via-brandDark to-brandGray">
+  <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-gradient-to-b from-dark-bg via-dark-card to-dark-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Text Content -->
         <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brandYellow/10 border border-brandYellow/30 text-brandYellow font-semibold text-xs sm:text-sm tracking-wide">
-            <i class="fa-solid fa-award"></i> 100% LIFETIME NATURAL COACHING IN ADDIS ABABA
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-bold tracking-wider uppercase">
+            <i class="fa-solid fa-shield-halved"></i> 100% Lifetime Natural Personal Trainer
           </div>
 
-          <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-none text-white uppercase">
+          <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white uppercase leading-none">
             Build Muscle. <br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandYellow to-yellow-500">Burn Fat.</span> <br>
-            Transform Local.
+            <span class="text-brand-orange">Burn Fat.</span> <br>
+            Transform in Addis.
           </h1>
 
-          <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-            Personalized natural fitness routines, Ethiopian diet planning, gym coaching, and home workouts. Train with <span class="text-white font-semibold">Coach Roba</span> in Addis Ababa or anywhere via the <span class="text-brandYellow font-semibold">Woyyu Fitness App</span>.
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            Custom natural physique transformation programs, Ethiopian nutrition planning, in-person gym coaching in Addis Ababa, and global online coaching powered by the <span class="text-white font-semibold">Woyyu Fitness App</span>.
           </p>
 
-          <!-- Quick Stats Banner -->
-          <div class="grid grid-cols-3 gap-4 pt-4 border-t border-b border-white/10 max-w-lg mx-auto lg:mx-0">
+          <!-- Quick Stats -->
+          <div class="grid grid-cols-3 gap-4 py-4 border-y border-dark-border max-w-md mx-auto lg:mx-0">
             <div>
-              <p class="text-2xl sm:text-3xl font-black text-brandYellow">40.3K+</p>
-              <p class="text-xs text-gray-400 uppercase tracking-wider font-medium">Followers</p>
+              <p class="text-2xl sm:text-3xl font-extrabold text-white">40.3K+</p>
+              <p class="text-[11px] text-slate-400 font-semibold uppercase">Followers</p>
             </div>
             <div>
-              <p class="text-2xl sm:text-3xl font-black text-brandYellow">621K+</p>
-              <p class="text-xs text-gray-400 uppercase tracking-wider font-medium">Likes</p>
+              <p class="text-2xl sm:text-3xl font-extrabold text-brand-orange">621K+</p>
+              <p class="text-[11px] text-slate-400 font-semibold uppercase">Likes</p>
             </div>
             <div>
-              <p class="text-2xl sm:text-3xl font-black text-brandYellow">100%</p>
-              <p class="text-xs text-gray-400 uppercase tracking-wider font-medium">Natural</p>
+              <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+              <p class="text-[11px] text-slate-400 font-semibold uppercase">Natural</p>
             </div>
           </div>
 
           <!-- CTAs -->
-          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brandYellow hover:bg-yellow-400 text-black font-extrabold text-lg px-8 py-4 rounded-xl transition-all shadow-xl shadow-yellow-500/20">
-              <i class="fa-brands fa-telegram text-2xl"></i>
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-orange hover:bg-brand-orange-dark text-white font-bold text-sm uppercase px-8 py-4 rounded-xl transition-all shadow-xl shadow-brand-orange/20">
+              <i class="fa-brands fa-telegram text-xl"></i>
               <span>Join Telegram Bot</span>
             </a>
-            <a href="tel:+251946364983" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brandCard hover:bg-neutral-800 text-white font-bold text-lg px-8 py-4 rounded-xl border border-white/10 transition-all">
-              <i class="fa-solid fa-phone text-brandYellow"></i>
+            <a href="tel:+251946364983" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-dark-card hover:bg-slate-800 text-white font-bold text-sm uppercase px-8 py-4 rounded-xl border border-dark-border transition-all">
+              <i class="fa-solid fa-phone text-brand-orange"></i>
               <span>0946 364 983</span>
             </a>
           </div>
         </div>
 
-        <!-- Hero Visual/Badge -->
-        <div class="lg:col-span-5 relative">
-          <div class="relative mx-auto max-w-sm rounded-3xl bg-gradient-to-tr from-brandYellow/20 to-transparent p-1 border border-white/10 shadow-2xl">
-            <div class="bg-brandCard rounded-[22px] p-6 text-center space-y-6">
-              <div class="w-24 h-24 mx-auto rounded-full bg-brandDark border-2 border-brandYellow flex items-center justify-center text-3xl text-brandYellow shadow-lg">
-                <i class="fa-solid fa-dumbbell"></i>
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold text-white uppercase">Coach Roba</h3>
-                <p class="text-xs text-brandYellow tracking-widest font-semibold uppercase">@roba_udesa</p>
-              </div>
-              <p class="text-sm text-gray-300 italic">
-                "Helping you reach your peak physical potential naturally using proven training systems and structured nutrition."
-              </p>
-              <div class="bg-brandDark/80 p-4 rounded-xl border border-white/5 text-left text-xs space-y-2 text-gray-300">
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-check text-brandYellow"></i>
-                  <span>In-Person Training in Addis Ababa</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-check text-brandYellow"></i>
-                  <span>Custom Ethiopian Meal Strategy</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-check text-brandYellow"></i>
-                  <span>Woyyu Fitness App Access</span>
-                </div>
-              </div>
+        <!-- Coach Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="w-full max-w-sm bg-dark-card p-6 rounded-3xl border border-dark-border shadow-2xl space-y-6 text-center">
+            <div class="w-24 h-24 rounded-2xl bg-brand-orange text-white font-black mx-auto flex items-center justify-center text-3xl shadow-lg shadow-brand-orange/30">
+              CR
             </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Woyyu Fitness App Section -->
-  <section id="app" class="py-20 bg-brandDark relative overflow-hidden border-t border-b border-white/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-gradient-to-r from-brandCard to-brandGray rounded-3xl p-8 sm:p-12 border border-brandYellow/20 relative">
-        <div class="grid lg:grid-cols-12 gap-8 items-center">
-          
-          <div class="lg:col-span-7 space-y-6">
-            <span class="bg-brandYellow text-black font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Official App Launch</span>
-            <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
-              Train Anytime With The <br>
-              <span class="text-brandYellow">Woyyu Fitness App</span>
-            </h2>
-            <p class="text-gray-300 text-base leading-relaxed">
-              No matter where you are in Addis Ababa or across the world, get direct access to Coach Roba's workout routines, video demonstrations, progress tracking, and daily nutrition targets.
+            <div>
+              <h3 class="text-xl font-bold text-white uppercase">Coach Roba</h3>
+              <p class="text-xs text-brand-orange font-semibold tracking-wider uppercase">@roba_udesa</p>
+            </div>
+            <p class="text-xs text-slate-300 italic leading-relaxed">
+              "Helping you achieve your dream physique naturally through structured hypertrophy routines and practical Ethiopian meal guidelines."
             </p>
-
-            <div class="grid sm:grid-cols-2 gap-4 pt-2">
-              <div class="flex items-start gap-3">
-                <div class="w-8 h-8 rounded-lg bg-brandYellow/10 border border-brandYellow/30 text-brandYellow flex items-center justify-center shrink-0 mt-1">
-                  <i class="fa-solid fa-play text-xs"></i>
-                </div>
-                <div>
-                  <h4 class="font-bold text-white text-sm">HD Video Guides</h4>
-                  <p class="text-xs text-gray-400">Step-by-step form execution for gym & home exercises.</p>
-                </div>
+            <div class="bg-dark-bg p-4 rounded-xl border border-dark-border text-left text-xs space-y-2 text-slate-300">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-orange"></i>
+                <span>In-Person Personal Training (Addis Ababa)</span>
               </div>
-              <div class="flex items-start gap-3">
-                <div class="w-8 h-8 rounded-lg bg-brandYellow/10 border border-brandYellow/30 text-brandYellow flex items-center justify-center shrink-0 mt-1">
-                  <i class="fa-solid fa-chart-line text-xs"></i>
-                </div>
-                <div>
-                  <h4 class="font-bold text-white text-sm">Progress Tracking</h4>
-                  <p class="text-xs text-gray-400">Log workout weights, sets, and body measurements easily.</p>
-                </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-orange"></i>
+                <span>Woyyu Fitness Mobile App Access</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-orange"></i>
+                <span>Tailored Meal Plans for Local Foods</span>
               </div>
             </div>
+          </div>
+        </div>
 
-            <!-- Download Buttons -->
-            <div class="flex flex-wrap gap-4 pt-4">
-              <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="inline-flex items-center gap-3 bg-black hover:bg-neutral-900 border border-white/20 text-white px-6 py-3 rounded-xl transition-all">
-                <i class="fa-brands fa-telegram text-2xl text-brandYellow"></i>
-                <div class="text-left">
-                  <p class="text-[10px] uppercase text-gray-400">Access Instantly</p>
-                  <p class="text-sm font-bold leading-tight">Telegram App Bot</p>
-                </div>
-              </a>
-              <a href="#contact" class="inline-flex items-center gap-3 bg-brandYellow hover:bg-yellow-400 text-black font-bold px-6 py-3 rounded-xl transition-all">
-                <i class="fa-solid fa-download text-lg"></i>
-                <div class="text-left">
-                  <p class="text-[10px] uppercase text-black/70">Get APK / Direct Link</p>
-                  <p class="text-sm font-bold leading-tight">Request Woyyu App</p>
-                </div>
-              </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-dark-bg border-t border-dark-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center space-y-4">
+        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">About Coach Roba</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold uppercase text-white">Lifetime Natural Discipline</p>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Coach Roba is a dedicated fitness model and natural bodybuilding expert based in Addis Ababa, Ethiopia. With over 40,000 active followers and hundreds of client success stories, Coach Roba specializes in helping beginners and advanced athletes build athletic muscle and lose fat without artificial shortcuts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Woyyu App Showcase Section (Matches Play Store Screenshot) -->
+  <section id="app" class="py-20 bg-dark-card border-t border-b border-dark-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- App Details Left -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-orange to-red-500 p-3 shadow-lg shrink-0">
+              <div class="w-full h-full border-2 border-white/80 rounded-lg flex items-center justify-center text-white">
+                <i class="fa-solid fa-dumbbell text-2xl"></i>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Woyyu Fitness</h2>
+              <p class="text-xs font-semibold text-brand-blue">Horan Technologies</p>
+              <div class="flex items-center gap-4 text-xs text-slate-400 mt-2">
+                <span><i class="fa-solid fa-download text-slate-300"></i> 9.2 MB</span>
+                <span>|</span>
+                <span class="border border-slate-600 px-1 rounded text-[10px] font-bold">3+</span>
+                <span>Rated for 3+</span>
+              </div>
             </div>
           </div>
 
-          <!-- Phone Mockup Feature -->
-          <div class="lg:col-span-5 flex justify-center">
-            <div class="w-64 h-[450px] bg-black border-4 border-neutral-700 rounded-[36px] p-4 shadow-2xl relative flex flex-col justify-between">
-              <div class="w-20 h-4 bg-neutral-800 rounded-full mx-auto mb-4"></div>
-              
-              <div class="bg-brandCard p-4 rounded-2xl text-center space-y-3 border border-white/10">
-                <div class="w-12 h-12 bg-brandYellow text-black font-black rounded-full mx-auto flex items-center justify-center text-xl">WF</div>
-                <h3 class="font-extrabold text-white text-sm">WOYYU APP</h3>
-                <p class="text-[11px] text-gray-400">"Your Personal Trainer in Your Pocket"</p>
-                <div class="bg-brandDark p-3 rounded-xl text-xs text-brandYellow font-semibold">
-                  Today's Plan: Hypertrophy Arms & Chest
+          <!-- Play Store Action Button -->
+          <div class="pt-2">
+            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto bg-brand-blue hover:bg-blue-700 text-white font-bold text-sm px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-blue-500/20">
+              <span>Install Woyyu Fitness</span>
+            </a>
+          </div>
+
+          <div class="space-y-3 pt-4 border-t border-dark-border">
+            <h3 class="text-base font-bold text-white">About this app</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Woyyu Fitness — personal training, meal plans, and progress tracking for clients. Developed by Horan Technologies specifically for Coach Roba's trainees in Ethiopia and worldwide.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 pt-2">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Active Membership & Subscription Dashboard</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Customizable Profile (Height, Weight, Age, Gender)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Workout Routines & Daily Meal Logging</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phone Mockups Showcase -->
+        <div class="lg:col-span-6 flex justify-center gap-4 overflow-x-auto py-4">
+          
+          <!-- Screen 1: Dashboard -->
+          <div class="w-48 sm:w-56 bg-black border-4 border-slate-800 rounded-[28px] p-3 shrink-0 shadow-2xl">
+            <div class="bg-dark-bg rounded-2xl p-3 text-left space-y-3 border border-slate-800">
+              <div class="flex justify-between items-center text-[10px] text-slate-400">
+                <span>Woyyu Dashboard</span>
+                <i class="fa-solid fa-fire text-brand-orange"></i>
+              </div>
+              <div class="bg-brand-orange p-2.5 rounded-xl text-white">
+                <p class="text-[9px] uppercase font-bold">Active Challenge</p>
+                <p class="text-xs font-extrabold">Hypertrophy Chest & Arms</p>
+              </div>
+              <div class="bg-dark-card p-2 rounded-lg text-[10px] text-slate-300 space-y-1">
+                <p>Protein: <span class="text-white font-bold">140g / 160g</span></p>
+                <p>Calories: <span class="text-white font-bold">2,100 kcal</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Screen 2: Active Membership -->
+          <div class="w-48 sm:w-56 bg-black border-4 border-slate-800 rounded-[28px] p-3 shrink-0 shadow-2xl">
+            <div class="bg-dark-bg rounded-2xl p-3 text-left space-y-3 border border-slate-800">
+              <div class="flex items-center gap-2">
+                <div class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange text-xs font-bold flex items-center justify-center">Y</div>
+                <div>
+                  <p class="text-[10px] font-bold text-white">Yihus</p>
+                  <p class="text-[8px] text-slate-400">0923294028</p>
                 </div>
               </div>
-
-              <div class="text-center pt-4">
-                <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="block w-full py-2 bg-brandYellow text-black font-bold rounded-xl text-xs">
-                  Launch Woyyu Bot
-                </a>
+              <div class="bg-emerald-950/80 border border-emerald-500/30 text-emerald-400 p-2 rounded-lg text-[9px] font-medium flex items-center gap-1.5">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Your membership is active. Enjoy full access!</span>
+              </div>
+              <div class="space-y-1.5 text-[9px]">
+                <div class="bg-dark-card p-2 rounded text-slate-300 flex justify-between">
+                  <span>Profile</span>
+                  <i class="fa-solid fa-chevron-right text-slate-500"></i>
+                </div>
+                <div class="bg-dark-card p-2 rounded text-slate-300 flex justify-between">
+                  <span>About Us</span>
+                  <i class="fa-solid fa-chevron-right text-slate-500"></i>
+                </div>
               </div>
             </div>
           </div>
 
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Client Testimonials & Results -->
-  <section id="testimonials" class="py-20 bg-brandDark">
+  <!-- Programs Section -->
+  <section id="programs" class="py-20 bg-dark-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-xs font-extrabold uppercase text-brandYellow tracking-widest">Real Transformation Stories</h2>
-        <p class="text-3xl sm:text-4xl font-black uppercase text-white mt-2">What Clients Say</p>
-        <p class="text-gray-400 text-sm mt-2">Proven results from gym members and online trainees across Addis Ababa.</p>
+        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">Coaching Programs</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold uppercase text-white mt-2">Tailored To Your Goals</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Program 1 -->
+        <div class="bg-dark-card p-8 rounded-2xl border border-dark-border space-y-4 hover:border-brand-orange/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 text-brand-orange flex items-center justify-center text-xl font-bold">
+            <i class="fa-solid fa-dumbbell"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Hypertrophy & Muscle Gain</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Designed for natural lifters aiming to pack on lean muscle mass through progressive overload principles.</p>
+          <ul class="text-xs text-slate-400 space-y-2 border-t border-dark-border pt-4">
+            <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Targeted Split Routines</li>
+            <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Local Meal Plans (Injera, Eggs, Meat)</li>
+          </ul>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="bg-dark-card p-8 rounded-2xl border-2 border-brand-orange space-y-4 relative">
+          <span class="absolute -top-3 right-6 bg-brand-orange text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Most Popular</span>
+          <div class="w-12 h-12 rounded-xl bg-brand-orange text-white flex items-center justify-center text-xl font-bold">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">Fat Shred & Physique Recomp</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Burn belly fat while preserving hard-earned muscle with custom calorie deficits and cardio strategy.</p>
+          <ul class="text-xs text-slate-400 space-y-2 border-t border-dark-border pt-4">
+            <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Daily Calorie Tracking</li>
+            <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Woyyu App Progress Monitoring</li>
+          </ul>
+        </div>
+
+        <!-- Program 3 -->
+        <div class="bg-dark-card p-8 rounded-2xl border border-dark-border space-y-4 hover:border-brand-orange/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 text-brand-orange flex items-center justify-center text-xl font-bold">
+            <i class="fa-solid fa-user-check"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white">1-on-1 Personal Gym Coaching</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Direct in-person training with Coach Roba at top-tier fitness centers in Addis Ababa.</p>
+          <ul class="text-xs text-slate-400 space-y-2 border-t border-dark-border pt-4">
+            <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Hands-on Form Correction</li>
+            <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> High Intensity Spotting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Addis Ababa Gym Locations -->
+  <section id="locations" class="py-20 bg-dark-card border-t border-b border-dark-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+      <div>
+        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">Local SEO & Presence</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold uppercase text-white mt-2">Training Locations in Addis Ababa</p>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-6 text-left">
+        <div class="bg-dark-bg p-6 rounded-2xl border border-dark-border space-y-2">
+          <i class="fa-solid fa-location-dot text-2xl text-brand-orange"></i>
+          <h4 class="text-base font-bold text-white">Bole Sub-City</h4>
+          <p class="text-xs text-slate-400">Available for personal training sessions at premier Bole gyms.</p>
+        </div>
+        <div class="bg-dark-bg p-6 rounded-2xl border border-dark-border space-y-2">
+          <i class="fa-solid fa-location-dot text-2xl text-brand-orange"></i>
+          <h4 class="text-base font-bold text-white">Kazanchis & Center</h4>
+          <p class="text-xs text-slate-400">Flexible morning and evening coaching slots available.</p>
+        </div>
+        <div class="bg-dark-bg p-6 rounded-2xl border border-dark-border space-y-2">
+          <i class="fa-solid fa-globe text-2xl text-brand-orange"></i>
+          <h4 class="text-base font-bold text-white">Online Coaching</h4>
+          <p class="text-xs text-slate-400">Train anywhere in Ethiopia or worldwide via the Woyyu App.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-dark-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">Client Testimonials</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold uppercase text-white mt-2">Proven Natural Results</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
         
-        <!-- Card 1 -->
-        <div class="bg-brandCard p-6 rounded-2xl border border-white/10 flex flex-col justify-between space-y-4">
+        <div class="bg-dark-card p-6 rounded-2xl border border-dark-border flex flex-col justify-between space-y-4">
           <div class="space-y-3">
-            <div class="flex text-brandYellow gap-1 text-sm">
+            <div class="flex text-brand-orange gap-1 text-xs">
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
-            <p class="text-gray-300 text-sm leading-relaxed italic">
-              "Coach Roba transformed my understanding of natural muscle building. His nutrition strategy for local Ethiopian food made sticking to my macros effortless!"
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed italic">
+              "Coach Roba simplified natural muscle building for me. Following his advice on local Ethiopian foods helped me build lean muscle consistently."
             </p>
           </div>
-          <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+          <div class="pt-4 border-t border-dark-border flex items-center justify-between text-xs">
             <div>
-              <p class="font-bold text-white text-sm">Yared T.</p>
-              <p class="text-xs text-brandYellow">Bole, Addis Ababa</p>
+              <p class="font-bold text-white">Yared T.</p>
+              <p class="text-[10px] text-slate-400">Bole, Addis Ababa</p>
             </div>
-            <span class="text-xs bg-brandYellow/10 text-brandYellow px-2.5 py-1 rounded-full font-semibold">+6kg Muscle</span>
+            <span class="bg-brand-orange/10 text-brand-orange px-2.5 py-1 rounded-full font-bold">+6kg Muscle</span>
           </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="bg-brandCard p-6 rounded-2xl border border-white/10 flex flex-col justify-between space-y-4">
+        <div class="bg-dark-card p-6 rounded-2xl border border-dark-border flex flex-col justify-between space-y-4">
           <div class="space-y-3">
-            <div class="flex text-brandYellow gap-1 text-sm">
+            <div class="flex text-brand-orange gap-1 text-xs">
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
-            <p class="text-gray-300 text-sm leading-relaxed italic">
-              "The Woyyu Fitness app and Telegram bot made following my workout plan so easy. I lost fat without sacrificing energy or strength."
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed italic">
+              "The Woyyu Fitness app made workout logging so easy. Coach Roba’s guidance kept me accountable every single day."
             </p>
           </div>
-          <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+          <div class="pt-4 border-t border-dark-border flex items-center justify-between text-xs">
             <div>
-              <p class="font-bold text-white text-sm">Selam M.</p>
-              <p class="text-xs text-brandYellow">Online Trainee</p>
+              <p class="font-bold text-white">Selam M.</p>
+              <p class="text-[10px] text-slate-400">Online Trainee</p>
             </div>
-            <span class="text-xs bg-brandYellow/10 text-brandYellow px-2.5 py-1 rounded-full font-semibold">-8kg Fat Loss</span>
+            <span class="bg-brand-orange/10 text-brand-orange px-2.5 py-1 rounded-full font-bold">-8kg Fat Loss</span>
           </div>
         </div>
 
-        <!-- Card 3 -->
-        <div class="bg-brandCard p-6 rounded-2xl border border-white/10 flex flex-col justify-between space-y-4">
+        <div class="bg-dark-card p-6 rounded-2xl border border-dark-border flex flex-col justify-between space-y-4">
           <div class="space-y-3">
-            <div class="flex text-brandYellow gap-1 text-sm">
+            <div class="flex text-brand-orange gap-1 text-xs">
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
-            <p class="text-gray-300 text-sm leading-relaxed italic">
-              "In-person training with Coach Roba is intense and highly disciplined. Best personal coach in Addis Ababa hands down."
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed italic">
+              "In-person gym sessions with Coach Roba are intense. His push on proper form completely fixed my shoulder pain."
             </p>
           </div>
-          <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+          <div class="pt-4 border-t border-dark-border flex items-center justify-between text-xs">
             <div>
-              <p class="font-bold text-white text-sm">Dawit K.</p>
-              <p class="text-xs text-brandYellow">Hawassa / Addis</p>
+              <p class="font-bold text-white">Dawit K.</p>
+              <p class="text-[10px] text-slate-400">Gym Trainee</p>
             </div>
-            <span class="text-xs bg-brandYellow/10 text-brandYellow px-2.5 py-1 rounded-full font-semibold">Strength Gain</span>
+            <span class="bg-brand-orange/10 text-brand-orange px-2.5 py-1 rounded-full font-bold">Strength Gain</span>
           </div>
         </div>
 
@@ -338,36 +466,111 @@
     </div>
   </section>
 
-  <!-- Contact / Booking Section -->
-  <section id="contact" class="py-20 bg-brandGray border-t border-white/10">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+  <!-- Interactive Calorie Calculator -->
+  <section id="calculator" class="py-20 bg-dark-card border-t border-b border-dark-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
       <div>
-        <h2 class="text-3xl sm:text-5xl font-black uppercase text-white">Ready To Transform Your Physique?</h2>
-        <p class="text-gray-400 text-base mt-2">Get in touch directly with Coach Roba for 1-on-1 coaching, gym sessions, or app access.</p>
+        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">Free Tool</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold uppercase text-white mt-2">Daily Calorie Calculator</p>
+        <p class="text-xs text-slate-400 mt-2">Estimate your daily maintenance and target calories.</p>
       </div>
 
-      <div class="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
-        <a href="tel:+251946364983" class="bg-brandCard hover:bg-neutral-800 p-6 rounded-2xl border border-white/10 text-center space-y-2 transition-all">
-          <i class="fa-solid fa-phone text-3xl text-brandYellow mb-2"></i>
-          <p class="text-xs uppercase text-gray-400 font-bold">Call Directly</p>
-          <p class="text-xl font-black text-white">0946 364 983</p>
-        </a>
+      <div class="bg-dark-bg p-6 sm:p-8 rounded-3xl border border-dark-border text-left space-y-6">
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">Weight (kg)</label>
+            <input type="number" id="calc-weight" placeholder="70" class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-orange">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">Height (cm)</label>
+            <input type="number" id="calc-height" placeholder="175" class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-orange">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">Goal</label>
+            <select id="calc-goal" class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-orange">
+              <option value="lose">Fat Loss (-15%)</option>
+              <option value="maintain">Maintain Weight</option>
+              <option value="gain">Muscle Gain (+10%)</option>
+            </select>
+          </div>
+        </div>
 
-        <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="bg-brandCard hover:bg-neutral-800 p-6 rounded-2xl border border-white/10 text-center space-y-2 transition-all">
-          <i class="fa-brands fa-telegram text-3xl text-brandYellow mb-2"></i>
-          <p class="text-xs uppercase text-gray-400 font-bold">Telegram Bot</p>
-          <p class="text-xl font-black text-white">@woyyu_fitness_bot</p>
-        </a>
+        <button onclick="calculateCalories()" class="w-full bg-brand-orange hover:bg-brand-orange-dark text-white font-bold text-xs uppercase px-6 py-3.5 rounded-xl transition-all">
+          Calculate Target Calories
+        </button>
+
+        <div id="calc-result" class="hidden bg-dark-card p-4 rounded-xl border border-brand-orange/40 text-center space-y-1">
+          <p class="text-xs text-slate-400">Estimated Daily Target:</p>
+          <p id="calc-val" class="text-2xl font-extrabold text-brand-orange">2,200 kcal/day</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 bg-dark-bg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">Got Questions?</h2>
+        <p class="text-3xl font-extrabold uppercase text-white mt-2">Frequently Asked Questions</p>
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm">
+        <div class="bg-dark-card p-5 rounded-2xl border border-dark-border">
+          <h4 class="font-bold text-white">How do I start training with Coach Roba?</h4>
+          <p class="text-slate-400 mt-2">You can click the Telegram button or call directly at 0946 364 983 to discuss in-person gym sessions in Addis Ababa or online app coaching.</p>
+        </div>
+
+        <div class="bg-dark-card p-5 rounded-2xl border border-dark-border">
+          <h4 class="font-bold text-white">Where can I download the Woyyu Fitness App?</h4>
+          <p class="text-slate-400 mt-2">The Woyyu Fitness App (developed by Horan Technologies) is available through Coach Roba's official Telegram bot or direct package download.</p>
+        </div>
+
+        <div class="bg-dark-card p-5 rounded-2xl border border-dark-border">
+          <h4 class="font-bold text-white">Do you provide custom Ethiopian meal plans?</h4>
+          <p class="text-slate-400 mt-2">Yes! All meal plans are customized around accessible, nutritious local Ethiopian food sources like eggs, meat, injera macros, milk, and lentils.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-8 bg-black border-t border-white/10 text-center text-xs text-gray-500">
-    <div class="max-w-7xl mx-auto px-4">
+  <footer class="py-12 bg-black border-t border-dark-border text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 space-y-4">
+      <div class="flex justify-center gap-6 text-slate-400 text-lg">
+        <a href="https://tiktok.com/@roba_udesa" target="_blank" class="hover:text-brand-orange"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="hover:text-brand-orange"><i class="fa-brands fa-telegram"></i></a>
+        <a href="tel:+251946364983" class="hover:text-brand-orange"><i class="fa-solid fa-phone"></i></a>
+      </div>
       <p>&copy; 2026 Coach Roba | Woyyu Fitness. All Rights Reserved. Addis Ababa, Ethiopia.</p>
     </div>
   </footer>
 
+  <!-- Simple JS Logic -->
+  <script>
+    // Mobile Menu Toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    // Calorie Calculator Logic
+    function calculateCalories() {
+      const weight = parseFloat(document.getElementById('calc-weight').value) || 70;
+      const height = parseFloat(document.getElementById('calc-height').value) || 175;
+      const goal = document.getElementById('calc-goal').value;
+
+      // Base BMR estimate
+      let bmr = (10 * weight) + (6.25 * height) - (5 * 25) + 5;
+      let tdee = bmr * 1.45;
+
+      if (goal === 'lose') tdee *= 0.85;
+      if (goal === 'gain') tdee *= 1.10;
+
+      document.getElementById('calc-val').innerText = `${Math.round(tdee)} kcal / day`;
+      document.getElementById('calc-result').classList.remove('hidden');
+    }
+  </script>
 </body>
 </html>
