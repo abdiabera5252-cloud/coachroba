@@ -36,13 +36,12 @@
     }
   </script>
 
-  <!-- Local SEO Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
     "name": "Woyyu Fitness - Coach Roba",
-    "image": "https://t.me/woyyu_fitness_bot",
+    "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
     "telephone": "+251946364983",
     "priceRange": "$$",
     "address": {
@@ -67,7 +66,6 @@
 </head>
 <body class="bg-dark-bg text-slate-100 font-sans antialiased selection:bg-brand-orange selection:text-white">
 
-  <!-- Navigation -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-dark-bg/90 backdrop-blur-md border-b border-dark-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
@@ -103,7 +101,7 @@
       </a>
 
       <!-- Mobile Menu Toggle -->
-      <button id="mobile-menu-btn" class="lg:hidden text-slate-300 text-2xl focus:outline-none">
+      <button id="mobile-menu-btn" class="lg:hidden text-slate-300 text-2xl focus:outline-none" aria-label="Toggle Navigation Menu">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
@@ -123,7 +121,6 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-gradient-to-b from-dark-bg via-dark-card to-dark-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
@@ -172,11 +169,15 @@
           </div>
         </div>
 
-        <!-- Coach Card -->
         <div class="lg:col-span-5 flex justify-center">
           <div class="w-full max-w-sm bg-dark-card p-6 rounded-3xl border border-dark-border shadow-2xl space-y-6 text-center">
-            <div class="w-24 h-24 rounded-2xl bg-brand-orange text-white font-black mx-auto flex items-center justify-center text-3xl shadow-lg shadow-brand-orange/30">
-              CR
+            <div class="w-28 h-28 rounded-2xl overflow-hidden mx-auto border-2 border-brand-orange shadow-lg shadow-brand-orange/30 relative">
+              <img 
+                src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=400&q=80" 
+                alt="Coach Roba - Woyyu Fitness" 
+                class="w-full h-full object-cover" 
+                onerror="this.src='https://placehold.co/400x400/131924/FF5722?text=Coach+Roba'"
+              >
             </div>
             <div>
               <h3 class="text-xl font-bold text-white uppercase">Coach Roba</h3>
@@ -206,7 +207,6 @@
     </div>
   </section>
 
-  <!-- About Section (With Video & Photo Gallery Placeholders) -->
   <section id="about" class="py-20 bg-dark-bg border-t border-dark-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center space-y-4 mb-12">
@@ -222,30 +222,65 @@
         
         <!-- Video Showcase Placeholder -->
         <div class="lg:col-span-7 bg-dark-card rounded-3xl p-4 border border-dark-border shadow-2xl relative overflow-hidden group">
-          <div class="aspect-video w-full rounded-2xl bg-slate-900 flex flex-col items-center justify-center relative border border-dark-border">
-            <div class="w-16 h-16 rounded-full bg-brand-orange text-white flex items-center justify-center text-2xl shadow-xl shadow-brand-orange/40 group-hover:scale-110 transition-transform">
-              <i class="fa-solid fa-play ml-1"></i>
+          <div class="aspect-video w-full rounded-2xl bg-slate-900 flex flex-col items-center justify-center relative border border-dark-border overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1000&q=80" 
+              alt="Coach Roba Workout Video Cover" 
+              class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-500"
+              onerror="this.src='https://placehold.co/1000x562/131924/FF5722?text=Coach+Roba+Video'"
+            >
+            <div class="relative z-10 flex flex-col items-center">
+              <div class="w-16 h-16 rounded-full bg-brand-orange text-white flex items-center justify-center text-2xl shadow-xl shadow-brand-orange/40 group-hover:scale-110 transition-transform cursor-pointer">
+                <i class="fa-solid fa-play ml-1"></i>
+              </div>
+              <p class="text-xs font-bold uppercase text-white mt-4 tracking-wider">Watch Coach Roba Training Reel</p>
+              <p class="text-[10px] text-slate-300 mt-1 bg-black/60 px-3 py-1 rounded-full border border-white/10">TikTok & Instagram Workout Guide</p>
             </div>
-            <p class="text-xs font-bold uppercase text-white mt-4 tracking-wider">Watch Coach Roba Training Video</p>
-            <p class="text-[10px] text-slate-400">Embed TikTok / YouTube Short here</p>
           </div>
         </div>
 
         <!-- Photo Gallery Placeholders -->
         <div class="lg:col-span-5 grid grid-cols-2 gap-4">
-          <div class="bg-dark-card rounded-2xl border border-dark-border aspect-square flex flex-col items-center justify-center p-4 text-center">
-            <i class="fa-solid fa-image text-3xl text-brand-orange mb-2"></i>
-            <span class="text-xs font-bold text-white">Gym Training Photo</span>
-            <span class="text-[10px] text-slate-500">Coach Roba Form Session</span>
+          <div class="bg-dark-card rounded-2xl border border-dark-border aspect-square flex flex-col items-center justify-center p-3 text-center overflow-hidden relative group">
+            <img 
+              src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80" 
+              alt="Gym Training Form" 
+              class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform"
+              onerror="this.src='https://placehold.co/400x400/131924/FF5722?text=Gym+Session'"
+            >
+            <div class="relative z-10 bg-black/70 p-2 rounded-xl backdrop-blur-sm">
+              <i class="fa-solid fa-dumbbell text-xl text-brand-orange mb-1"></i>
+              <span class="block text-xs font-bold text-white">Gym Training</span>
+              <span class="text-[9px] text-slate-300">Form & Techique</span>
+            </div>
           </div>
-          <div class="bg-dark-card rounded-2xl border border-dark-border aspect-square flex flex-col items-center justify-center p-4 text-center">
-            <i class="fa-solid fa-image text-3xl text-brand-orange mb-2"></i>
-            <span class="text-xs font-bold text-white">Physique Model Photo</span>
-            <span class="text-[10px] text-slate-500">Natural Bodybuilding</span>
+
+          <div class="bg-dark-card rounded-2xl border border-dark-border aspect-square flex flex-col items-center justify-center p-3 text-center overflow-hidden relative group">
+            <img 
+              src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=400&q=80" 
+              alt="Physique Model Photo" 
+              class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform"
+              onerror="this.src='https://placehold.co/400x400/131924/FF5722?text=Physique'"
+            >
+            <div class="relative z-10 bg-black/70 p-2 rounded-xl backdrop-blur-sm">
+              <i class="fa-solid fa-trophy text-xl text-brand-orange mb-1"></i>
+              <span class="block text-xs font-bold text-white">Natural Physique</span>
+              <span class="text-[9px] text-slate-300">Peak Condition</span>
+            </div>
           </div>
-          <div class="col-span-2 bg-dark-card rounded-2xl border border-dark-border h-32 flex flex-col items-center justify-center p-4 text-center">
-            <i class="fa-solid fa-camera text-2xl text-brand-orange mb-1"></i>
-            <span class="text-xs font-bold text-white">Addis Ababa Gym Outdoor Shoot</span>
+
+          <div class="col-span-2 bg-dark-card rounded-2xl border border-dark-border h-32 flex flex-col items-center justify-center p-4 text-center overflow-hidden relative group">
+            <img 
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" 
+              alt="Addis Ababa Fitness Shoot" 
+              class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform"
+              onerror="this.src='https://placehold.co/800x300/131924/FF5722?text=Outdoor+Shoot'"
+            >
+            <div class="relative z-10 bg-black/70 px-4 py-2 rounded-xl backdrop-blur-sm">
+              <i class="fa-solid fa-camera text-xl text-brand-orange mb-1"></i>
+              <span class="block text-xs font-bold text-white">Addis Ababa Fitness Gallery</span>
+              <span class="text-[10px] text-slate-300">In-person client coaching moments</span>
+            </div>
           </div>
         </div>
 
@@ -253,7 +288,6 @@
     </div>
   </section>
 
-  <!-- Woyyu App Showcase Section -->
   <section id="app" class="py-20 bg-dark-card border-t border-b border-dark-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
@@ -280,7 +314,8 @@
 
           <!-- Play Store Action Button -->
           <div class="pt-2">
-            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto bg-brand-blue hover:bg-blue-700 text-white font-bold text-sm px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-blue-500/20">
+            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto bg-brand-blue hover:bg-blue-700 text-white font-bold text-sm px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-blue-500/20 gap-2">
+              <i class="fa-brands fa-google-play text-lg"></i>
               <span>Install Woyyu Fitness</span>
             </a>
           </div>
@@ -298,7 +333,6 @@
           </div>
         </div>
 
-        <!-- App Screen Mockups -->
         <div class="lg:col-span-6 flex justify-center gap-4 overflow-x-auto py-4">
           <div class="w-48 sm:w-56 bg-black border-4 border-slate-800 rounded-[28px] p-3 shrink-0 shadow-2xl">
             <div class="bg-dark-bg rounded-2xl p-3 text-left space-y-3 border border-slate-800">
@@ -307,7 +341,7 @@
                 <i class="fa-solid fa-fire text-brand-orange"></i>
               </div>
               <div class="bg-brand-orange p-2.5 rounded-xl text-white">
-                <p class="text-[9px] uppercase font-bold">Active Challenge</p>
+                <p class="text-[9px] uppercase font-bold">Active Program</p>
                 <p class="text-xs font-extrabold">Hypertrophy Chest & Arms</p>
               </div>
               <div class="bg-dark-card p-2 rounded-lg text-[10px] text-slate-300 space-y-1">
@@ -322,21 +356,21 @@
               <div class="flex items-center gap-2">
                 <div class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange text-xs font-bold flex items-center justify-center">Y</div>
                 <div>
-                  <p class="text-[10px] font-bold text-white">Yihus</p>
+                  <p class="text-[10px] font-bold text-white">Trainee Profile</p>
                   <p class="text-[8px] text-slate-400">0923294028</p>
                 </div>
               </div>
               <div class="bg-emerald-950/80 border border-emerald-500/30 text-emerald-400 p-2 rounded-lg text-[9px] font-medium flex items-center gap-1.5">
                 <i class="fa-solid fa-circle-check"></i>
-                <span>Your membership is active. Enjoy full access!</span>
+                <span>Membership Active</span>
               </div>
               <div class="space-y-1.5 text-[9px]">
                 <div class="bg-dark-card p-2 rounded text-slate-300 flex justify-between">
-                  <span>Profile</span>
+                  <span>Profile Settings</span>
                   <i class="fa-solid fa-chevron-right text-slate-500"></i>
                 </div>
                 <div class="bg-dark-card p-2 rounded text-slate-300 flex justify-between">
-                  <span>About Us</span>
+                  <span>Contact Coach Roba</span>
                   <i class="fa-solid fa-chevron-right text-slate-500"></i>
                 </div>
               </div>
@@ -348,7 +382,6 @@
     </div>
   </section>
 
-  <!-- Programs Section (With Card Photo Placeholders) -->
   <section id="programs" class="py-20 bg-dark-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16">
@@ -359,54 +392,84 @@
       <div class="grid md:grid-cols-3 gap-8">
         
         <!-- Program 1 -->
-        <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden hover:border-brand-orange/50 transition-all group">
-          <div class="h-44 bg-slate-900 border-b border-dark-border relative flex flex-col items-center justify-center text-center p-4">
-            <i class="fa-solid fa-image text-3xl text-brand-orange mb-2 group-hover:scale-110 transition-transform"></i>
-            <span class="text-xs font-bold text-white uppercase">Hypertrophy Program Photo</span>
-            <span class="text-[10px] text-slate-500">Upload exercise / muscle gain photo</span>
+        <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden hover:border-brand-orange/50 transition-all group flex flex-col justify-between">
+          <div>
+            <div class="h-44 bg-slate-900 border-b border-dark-border relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" 
+                alt="Hypertrophy Program Photo" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                onerror="this.src='https://placehold.co/600x400/131924/FF5722?text=Hypertrophy+Program'"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent"></div>
+              <span class="absolute bottom-2 left-3 text-xs font-bold text-white uppercase bg-black/60 px-2 py-0.5 rounded border border-white/10">Hypertrophy</span>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-xl font-bold text-white">Hypertrophy & Muscle Gain</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">Designed for natural lifters aiming to pack on lean muscle mass through progressive overload principles.</p>
+              <ul class="text-xs text-slate-400 space-y-2 border-t border-dark-border pt-4">
+                <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Targeted Split Routines</li>
+                <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Local Meal Plans (Injera, Eggs, Meat)</li>
+              </ul>
+            </div>
           </div>
-          <div class="p-6 space-y-4">
-            <h3 class="text-xl font-bold text-white">Hypertrophy & Muscle Gain</h3>
-            <p class="text-xs text-slate-300 leading-relaxed">Designed for natural lifters aiming to pack on lean muscle mass through progressive overload principles.</p>
-            <ul class="text-xs text-slate-400 space-y-2 border-t border-dark-border pt-4">
-              <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Targeted Split Routines</li>
-              <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Local Meal Plans (Injera, Eggs, Meat)</li>
-            </ul>
+          <div class="p-6 pt-0">
+            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="block text-center w-full bg-dark-bg hover:bg-brand-orange text-white text-xs font-bold uppercase py-3 rounded-xl border border-dark-border transition-colors">Select Program</a>
           </div>
         </div>
 
         <!-- Program 2 -->
-        <div class="bg-dark-card rounded-2xl border-2 border-brand-orange overflow-hidden relative group">
-          <span class="absolute top-3 right-3 z-10 bg-brand-orange text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Most Popular</span>
-          <div class="h-44 bg-slate-900 border-b border-dark-border relative flex flex-col items-center justify-center text-center p-4">
-            <i class="fa-solid fa-image text-3xl text-brand-orange mb-2 group-hover:scale-110 transition-transform"></i>
-            <span class="text-xs font-bold text-white uppercase">Fat Loss Program Photo</span>
-            <span class="text-[10px] text-slate-500">Upload fat shred / cardio photo</span>
+        <div class="bg-dark-card rounded-2xl border-2 border-brand-orange overflow-hidden relative group flex flex-col justify-between">
+          <span class="absolute top-3 right-3 z-10 bg-brand-orange text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-md">Most Popular</span>
+          <div>
+            <div class="h-44 bg-slate-900 border-b border-dark-border relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" 
+                alt="Fat Loss Program Photo" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                onerror="this.src='https://placehold.co/600x400/131924/FF5722?text=Fat+Loss+Program'"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent"></div>
+              <span class="absolute bottom-2 left-3 text-xs font-bold text-white uppercase bg-black/60 px-2 py-0.5 rounded border border-white/10">Fat Loss</span>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-xl font-bold text-white">Fat Shred & Physique Recomp</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">Burn belly fat while preserving hard-earned muscle with custom calorie deficits and cardio strategy.</p>
+              <ul class="text-xs text-slate-400 space-y-2 border-t border-dark-border pt-4">
+                <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Daily Calorie Tracking</li>
+                <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Woyyu App Progress Monitoring</li>
+              </ul>
+            </div>
           </div>
-          <div class="p-6 space-y-4">
-            <h3 class="text-xl font-bold text-white">Fat Shred & Physique Recomp</h3>
-            <p class="text-xs text-slate-300 leading-relaxed">Burn belly fat while preserving hard-earned muscle with custom calorie deficits and cardio strategy.</p>
-            <ul class="text-xs text-slate-400 space-y-2 border-t border-dark-border pt-4">
-              <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Daily Calorie Tracking</li>
-              <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Woyyu App Progress Monitoring</li>
-            </ul>
+          <div class="p-6 pt-0">
+            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="block text-center w-full bg-brand-orange hover:bg-brand-orange-dark text-white text-xs font-bold uppercase py-3 rounded-xl transition-colors shadow-lg shadow-brand-orange/20">Select Program</a>
           </div>
         </div>
 
         <!-- Program 3 -->
-        <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden hover:border-brand-orange/50 transition-all group">
-          <div class="h-44 bg-slate-900 border-b border-dark-border relative flex flex-col items-center justify-center text-center p-4">
-            <i class="fa-solid fa-image text-3xl text-brand-orange mb-2 group-hover:scale-110 transition-transform"></i>
-            <span class="text-xs font-bold text-white uppercase">Personal Coaching Photo</span>
-            <span class="text-[10px] text-slate-500">Upload 1-on-1 gym coaching photo</span>
+        <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden hover:border-brand-orange/50 transition-all group flex flex-col justify-between">
+          <div>
+            <div class="h-44 bg-slate-900 border-b border-dark-border relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" 
+                alt="Personal Coaching Photo" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                onerror="this.src='https://placehold.co/600x400/131924/FF5722?text=Personal+Gym+Coaching'"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent"></div>
+              <span class="absolute bottom-2 left-3 text-xs font-bold text-white uppercase bg-black/60 px-2 py-0.5 rounded border border-white/10">In-Person Gym</span>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-xl font-bold text-white">1-on-1 Personal Gym Coaching</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">Direct in-person training with Coach Roba at top-tier fitness centers in Addis Ababa.</p>
+              <ul class="text-xs text-slate-400 space-y-2 border-t border-dark-border pt-4">
+                <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Hands-on Form Correction</li>
+                <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> High Intensity Spotting</li>
+              </ul>
+            </div>
           </div>
-          <div class="p-6 space-y-4">
-            <h3 class="text-xl font-bold text-white">1-on-1 Personal Gym Coaching</h3>
-            <p class="text-xs text-slate-300 leading-relaxed">Direct in-person training with Coach Roba at top-tier fitness centers in Addis Ababa.</p>
-            <ul class="text-xs text-slate-400 space-y-2 border-t border-dark-border pt-4">
-              <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Hands-on Form Correction</li>
-              <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> High Intensity Spotting</li>
-            </ul>
+          <div class="p-6 pt-0">
+            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="block text-center w-full bg-dark-bg hover:bg-brand-orange text-white text-xs font-bold uppercase py-3 rounded-xl border border-dark-border transition-colors">Select Program</a>
           </div>
         </div>
 
@@ -414,7 +477,6 @@
     </div>
   </section>
 
-  <!-- Addis Ababa Gym Locations (With Google Map Place) -->
   <section id="locations" class="py-20 bg-dark-card border-t border-b border-dark-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       <div class="text-center max-w-2xl mx-auto">
@@ -459,7 +521,6 @@
     </div>
   </section>
 
-  <!-- Testimonials Section (With Before & After Photo Sections) -->
   <section id="testimonials" class="py-20 bg-dark-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16">
@@ -473,15 +534,25 @@
         <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between p-6 space-y-4">
           <!-- Before / After Photo Placeholder -->
           <div class="grid grid-cols-2 gap-2 bg-slate-900 p-2 rounded-xl border border-dark-border">
-            <div class="aspect-[3/4] bg-dark-bg rounded-lg flex flex-col items-center justify-center p-2 text-center relative border border-white/5">
-              <span class="absolute top-1 left-1 bg-neutral-800 text-slate-300 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Before</span>
-              <i class="fa-solid fa-user text-xl text-slate-600 mb-1"></i>
-              <span class="text-[9px] text-slate-500">Day 1</span>
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-white/5 group">
+              <img 
+                src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=300&q=80" 
+                alt="Client Before Transformation" 
+                class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform"
+                onerror="this.src='https://placehold.co/300x400/131924/ffffff?text=Before'"
+              >
+              <span class="absolute top-1 left-1 bg-neutral-900/90 text-slate-300 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Before</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-slate-300 bg-black/60 px-1 rounded">Day 1</span>
             </div>
-            <div class="aspect-[3/4] bg-dark-bg rounded-lg flex flex-col items-center justify-center p-2 text-center relative border border-brand-orange/40">
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-brand-orange/50 group">
+              <img 
+                src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=300&q=80" 
+                alt="Client After Transformation" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                onerror="this.src='https://placehold.co/300x400/FF5722/ffffff?text=After'"
+              >
               <span class="absolute top-1 left-1 bg-brand-orange text-white text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">After</span>
-              <i class="fa-solid fa-user-check text-xl text-brand-orange mb-1"></i>
-              <span class="text-[9px] text-brand-orange font-bold">Month 3</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-brand-orange font-bold bg-black/80 px-1 rounded">Month 3</span>
             </div>
           </div>
 
@@ -507,15 +578,25 @@
         <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between p-6 space-y-4">
           <!-- Before / After Photo Placeholder -->
           <div class="grid grid-cols-2 gap-2 bg-slate-900 p-2 rounded-xl border border-dark-border">
-            <div class="aspect-[3/4] bg-dark-bg rounded-lg flex flex-col items-center justify-center p-2 text-center relative border border-white/5">
-              <span class="absolute top-1 left-1 bg-neutral-800 text-slate-300 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Before</span>
-              <i class="fa-solid fa-user text-xl text-slate-600 mb-1"></i>
-              <span class="text-[9px] text-slate-500">Day 1</span>
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-white/5 group">
+              <img 
+                src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=300&q=80" 
+                alt="Client Before Fat Loss" 
+                class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform"
+                onerror="this.src='https://placehold.co/300x400/131924/ffffff?text=Before'"
+              >
+              <span class="absolute top-1 left-1 bg-neutral-900/90 text-slate-300 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Before</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-slate-300 bg-black/60 px-1 rounded">Day 1</span>
             </div>
-            <div class="aspect-[3/4] bg-dark-bg rounded-lg flex flex-col items-center justify-center p-2 text-center relative border border-brand-orange/40">
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-brand-orange/50 group">
+              <img 
+                src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=300&q=80" 
+                alt="Client After Fat Loss" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                onerror="this.src='https://placehold.co/300x400/FF5722/ffffff?text=After'"
+              >
               <span class="absolute top-1 left-1 bg-brand-orange text-white text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">After</span>
-              <i class="fa-solid fa-user-check text-xl text-brand-orange mb-1"></i>
-              <span class="text-[9px] text-brand-orange font-bold">Month 4</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-brand-orange font-bold bg-black/80 px-1 rounded">Month 4</span>
             </div>
           </div>
 
@@ -541,15 +622,25 @@
         <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between p-6 space-y-4">
           <!-- Before / After Photo Placeholder -->
           <div class="grid grid-cols-2 gap-2 bg-slate-900 p-2 rounded-xl border border-dark-border">
-            <div class="aspect-[3/4] bg-dark-bg rounded-lg flex flex-col items-center justify-center p-2 text-center relative border border-white/5">
-              <span class="absolute top-1 left-1 bg-neutral-800 text-slate-300 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Before</span>
-              <i class="fa-solid fa-user text-xl text-slate-600 mb-1"></i>
-              <span class="text-[9px] text-slate-500">Day 1</span>
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-white/5 group">
+              <img 
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=300&q=80" 
+                alt="Client Before Recomp" 
+                class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform"
+                onerror="this.src='https://placehold.co/300x400/131924/ffffff?text=Before'"
+              >
+              <span class="absolute top-1 left-1 bg-neutral-900/90 text-slate-300 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Before</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-slate-300 bg-black/60 px-1 rounded">Day 1</span>
             </div>
-            <div class="aspect-[3/4] bg-dark-bg rounded-lg flex flex-col items-center justify-center p-2 text-center relative border border-brand-orange/40">
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-brand-orange/50 group">
+              <img 
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=300&q=80" 
+                alt="Client After Recomp" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                onerror="this.src='https://placehold.co/300x400/FF5722/ffffff?text=After'"
+              >
               <span class="absolute top-1 left-1 bg-brand-orange text-white text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">After</span>
-              <i class="fa-solid fa-user-check text-xl text-brand-orange mb-1"></i>
-              <span class="text-[9px] text-brand-orange font-bold">Month 2</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-brand-orange font-bold bg-black/80 px-1 rounded">Month 2</span>
             </div>
           </div>
 
@@ -575,7 +666,6 @@
     </div>
   </section>
 
-  <!-- Interactive Calorie Calculator -->
   <section id="calculator" class="py-20 bg-dark-card border-t border-b border-dark-border">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
       <div>
@@ -604,7 +694,7 @@
           </div>
         </div>
 
-        <button onclick="calculateCalories()" class="w-full bg-brand-orange hover:bg-brand-orange-dark text-white font-bold text-xs uppercase px-6 py-3.5 rounded-xl transition-all">
+        <button onclick="calculateCalories()" class="w-full bg-brand-orange hover:bg-brand-orange-dark text-white font-bold text-xs uppercase px-6 py-3.5 rounded-xl transition-all shadow-lg shadow-brand-orange/20">
           Calculate Target Calories
         </button>
 
@@ -616,7 +706,6 @@
     </div>
   </section>
 
-  <!-- FAQ Section -->
   <section id="faq" class="py-20 bg-dark-bg">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-12">
@@ -625,33 +714,32 @@
       </div>
 
       <div class="space-y-4 text-xs sm:text-sm">
-        <div class="bg-dark-card p-5 rounded-2xl border border-dark-border">
-          <h4 class="font-bold text-white">How do I start training with Coach Roba?</h4>
-          <p class="text-slate-400 mt-2">You can click the Telegram button or call directly at 0946 364 983 to discuss in-person gym sessions in Addis Ababa or online app coaching.</p>
+        <div class="bg-dark-card p-5 rounded-2xl border border-dark-border space-y-2">
+          <h4 class="font-bold text-white text-base">How do I start training with Coach Roba?</h4>
+          <p class="text-slate-400 leading-relaxed">You can click the Telegram button or call directly at 0946 364 983 to discuss in-person gym sessions in Addis Ababa or online app coaching.</p>
         </div>
 
-        <div class="bg-dark-card p-5 rounded-2xl border border-dark-border">
-          <h4 class="font-bold text-white">Where can I download the Woyyu Fitness App?</h4>
-          <p class="text-slate-400 mt-2">The Woyyu Fitness App (developed by Horan Technologies) is available through Coach Roba's official Telegram bot or direct package download.</p>
+        <div class="bg-dark-card p-5 rounded-2xl border border-dark-border space-y-2">
+          <h4 class="font-bold text-white text-base">Where can I download the Woyyu Fitness App?</h4>
+          <p class="text-slate-400 leading-relaxed">The Woyyu Fitness App (developed by Horan Technologies) is available through Coach Roba's official Telegram bot or direct package download.</p>
         </div>
 
-        <div class="bg-dark-card p-5 rounded-2xl border border-dark-border">
-          <h4 class="font-bold text-white">Do you provide custom Ethiopian meal plans?</h4>
-          <p class="text-slate-400 mt-2">Yes! All meal plans are customized around accessible, nutritious local Ethiopian food sources like eggs, meat, injera macros, milk, and lentils.</p>
+        <div class="bg-dark-card p-5 rounded-2xl border border-dark-border space-y-2">
+          <h4 class="font-bold text-white text-base">Do you provide custom Ethiopian meal plans?</h4>
+          <p class="text-slate-400 leading-relaxed">Yes! All meal plans are customized around accessible, nutritious local Ethiopian food sources like eggs, meat, injera macros, milk, and lentils.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="py-12 bg-black border-t border-dark-border text-center text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4 space-y-4">
       <div class="flex justify-center gap-6 text-slate-400 text-lg">
-        <a href="https://tiktok.com/@roba_udesa" target="_blank" class="hover:text-brand-orange"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="hover:text-brand-orange"><i class="fa-brands fa-telegram"></i></a>
-        <a href="tel:+251946364983" class="hover:text-brand-orange"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://tiktok.com/@roba_udesa" target="_blank" aria-label="TikTok Profile" class="hover:text-brand-orange transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://t.me/woyyu_fitness_bot" target="_blank" aria-label="Telegram Bot" class="hover:text-brand-orange transition-colors"><i class="fa-brands fa-telegram"></i></a>
+        <a href="tel:+251946364983" aria-label="Direct Call" class="hover:text-brand-orange transition-colors"><i class="fa-solid fa-phone"></i></a>
       </div>
-      <p>&copy; 2026 Coach Roba | Woyyu Fitness. All Rights Reserved. Addis Ababa, Ethiopia.<br> Designed by Abdi Abera <br> phone number +251925256424</p>
+      <p>&copy; 2026 Coach Roba | Woyyu Fitness. All Rights Reserved. Addis Ababa, Ethiopia.</p>
     </div>
   </footer>
 
@@ -659,9 +747,11 @@
     // Mobile Menu Toggle
     const btn = document.getElementById('mobile-menu-btn');
     const menu = document.getElementById('mobile-menu');
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
 
     // Calorie Calculator Logic
     function calculateCalories() {
@@ -675,8 +765,13 @@
       if (goal === 'lose') tdee *= 0.85;
       if (goal === 'gain') tdee *= 1.10;
 
-      document.getElementById('calc-val').innerText = `${Math.round(tdee)} kcal / day`;
-      document.getElementById('calc-result').classList.remove('hidden');
+      const resultElement = document.getElementById('calc-result');
+      const valElement = document.getElementById('calc-val');
+      
+      if (resultElement && valElement) {
+        valElement.innerText = `${Math.round(tdee)} kcal / day`;
+        resultElement.classList.remove('hidden');
+      }
     }
   </script>
 </body>
