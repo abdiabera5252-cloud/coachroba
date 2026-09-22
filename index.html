@@ -860,7 +860,66 @@
 
     mobileBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
-    });
+    });/**
+ * Attaches auto-close handlers for click outside, scroll, and touch drag gestures.
+ * 
+ * @param {HTMLElement} element - The target element (modal/drawer) to monitor.
+ * @param {Function} onClose - Callback triggered when a close action occurs.
+ * @returns {Function} Cleanup function to remove event listeners.
+ */
+function setupAutoClose(element, onClose) {
+  if (!element || typeof onClose !== 'function') return () => {};
+
+  let touchStartY = 0;
+  let touchStartX = 0;
+
+  // 1. Click Outside Handler
+  const handleClickOutside = (event) => {
+    if (!element.contains(event.target)) {
+      onClose();
+    }
+  };
+
+  // 2. Auto-Close on Scroll
+  const handleScroll = (event) => {
+    // Prevent closing if scrolling happens inside the element itself
+    if (element.contains(event.target)) return;
+    onClose();
+  };
+
+  // 3. Auto-Close on Touch Drag (Swipe Down / Out)
+  const handleTouchStart = (event) => {
+    touchStartY = event.touches[0].clientY;
+    touchStartX = event.touches[0].clientX;
+  };
+
+  const handleTouchMove = (event) => {
+    const currentY = event.touches[0].clientY;
+    const currentX = event.touches[0].clientX;
+    const deltaY = currentY - touchStartY;
+    const deltaX = currentX - touchStartX;
+
+    // Trigger close if drag distance exceeds 60px vertically (downward swipe)
+    // or if the touch drag originated outside the element
+    if (!element.contains(event.target) || deltaY > 60) {
+      onClose();
+    }
+  };
+
+  // Register Event Listeners (using capture phase for scroll/touch)
+  document.addEventListener('pointerdown', handleClickOutside);
+  window.addEventListener('scroll', handleScroll, true);
+  document.addEventListener('touchstart', handleTouchStart, { passive: true });
+  document.addEventListener('touchmove', handleTouchMove, { passive: true });
+
+  // Return Cleanup Function
+  return function cleanup() {
+    document.removeEventListener('pointerdown', handleClickOutside);
+    window.removeEventListener('scroll', handleScroll, true);
+    document.removeEventListener('touchstart', handleTouchStart);
+    document.removeEventListener('touchmove', handleTouchMove);
+  };
+}
 
     // FAQ Accordion Toggle
     document.querySelectorAll('.faq-toggle').forEach(button => {
