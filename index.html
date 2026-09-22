@@ -71,14 +71,13 @@
       
       <!-- Brand Logo -->
       <a href="#" class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-xl bg-brand-orange flex items-center justify-center text-white text-xl shadow-lg shadow-brand-orange/20">
-         <img 
-                src="logo.png" 
-                alt="Coach Roba - Woyyu Fitness" 
-                class="w-full h-full object-cover" 
-                onerror="this.src='https://placehold.co/400x400/131924/FF5722?text=Coach+Roba'"
-              >
-          <i class="fa-solid fa-dumbbell"></i>
+        <div class="w-10 h-10 rounded-xl bg-brand-orange flex items-center justify-center text-white text-xl shadow-lg shadow-brand-orange/20 overflow-hidden">
+          <img 
+            src="logo.png" 
+            alt="Coach Roba - Woyyu Fitness" 
+            class="w-full h-full object-cover" 
+            onerror="this.src='https://placehold.co/400x400/131924/FF5722?text=Coach+Roba'"
+          >
         </div>
         <div>
           <span class="text-lg font-extrabold tracking-tight text-white block leading-none">WOYYU FITNESS</span>
@@ -127,6 +126,7 @@
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-gradient-to-b from-dark-bg via-dark-card to-dark-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
@@ -213,6 +213,7 @@
     </div>
   </section>
 
+  <!-- About Section -->
   <section id="about" class="py-20 bg-dark-bg border-t border-dark-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center space-y-4 mb-12">
@@ -225,21 +226,14 @@
 
       <!-- Video & Media Layout -->
       <div class="grid lg:grid-cols-12 gap-8 items-center">
-        
-        <!-- Video Showcase Placeholder -->
         <div class="lg:col-span-7 bg-dark-card rounded-3xl p-4 border border-dark-border shadow-2xl relative overflow-hidden group">
-         <!-- Parent Box -->
-<div class="aspect-video w-full rounded-2xl bg-black overflow-hidden relative">
-  
-  <!-- CHANGE TO object-contain -->
-  <video class="w-full h-full object-contain rounded-2xl" controls poster="...">
-    <source src="roba.mp4" type="video/mp4">
-  </video>
-
-</div>
+          <div class="aspect-video w-full rounded-2xl bg-black overflow-hidden relative">
+            <video class="w-full h-full object-contain rounded-2xl" controls poster="heroroba.png">
+              <source src="roba.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
 
-        <!-- Photo Gallery Placeholders -->
         <div class="lg:col-span-5 grid grid-cols-2 gap-4">
           <div class="bg-dark-card rounded-2xl border border-dark-border aspect-square flex flex-col items-center justify-center p-3 text-center overflow-hidden relative group">
             <img 
@@ -251,7 +245,7 @@
             <div class="relative z-10 bg-black/70 p-2 rounded-xl backdrop-blur-sm">
               <i class="fa-solid fa-dumbbell text-xl text-brand-orange mb-1"></i>
               <span class="block text-xs font-bold text-white">Gym Training</span>
-              <span class="text-[9px] text-slate-300">Form & Techique</span>
+              <span class="text-[9px] text-slate-300">Form & Technique</span>
             </div>
           </div>
 
@@ -288,11 +282,11 @@
     </div>
   </section>
 
+  <!-- App Showcase Section -->
   <section id="app" class="py-20 bg-dark-card border-t border-b border-dark-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         
-        <!-- App Details Left -->
         <div class="lg:col-span-6 space-y-6">
           <div class="flex items-center gap-4">
             <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-orange to-red-500 p-3 shadow-lg shrink-0">
@@ -312,7 +306,6 @@
             </div>
           </div>
 
-          <!-- Play Store Action Button -->
           <div class="pt-2">
             <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto bg-brand-blue hover:bg-blue-700 text-white font-bold text-sm px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-blue-500/20 gap-2">
               <i class="fa-brands fa-google-play text-lg"></i>
@@ -382,6 +375,7 @@
     </div>
   </section>
 
+  <!-- Programs Section -->
   <section id="programs" class="py-20 bg-dark-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16">
@@ -390,7 +384,6 @@
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
-        
         <!-- Program 1 -->
         <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden hover:border-brand-orange/50 transition-all group flex flex-col justify-between">
           <div>
@@ -472,11 +465,11 @@
             <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="block text-center w-full bg-dark-bg hover:bg-brand-orange text-white text-xs font-bold uppercase py-3 rounded-xl border border-dark-border transition-colors">Select Program</a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
+  <!-- Locations Section -->
   <section id="locations" class="py-20 bg-dark-card border-t border-b border-dark-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       <div class="text-center max-w-2xl mx-auto">
@@ -485,7 +478,6 @@
       </div>
 
       <div class="grid lg:grid-cols-12 gap-8 items-center">
-        <!-- Gym Info -->
         <div class="lg:col-span-5 space-y-4">
           <div class="bg-dark-bg p-5 rounded-2xl border border-dark-border space-y-1">
             <i class="fa-solid fa-location-dot text-brand-orange text-xl mb-1"></i>
@@ -504,7 +496,6 @@
           </div>
         </div>
 
-        <!-- Interactive Google Map Embed Place -->
         <div class="lg:col-span-7 bg-dark-bg rounded-3xl p-3 border border-dark-border shadow-2xl">
           <div class="w-full h-80 sm:h-96 rounded-2xl overflow-hidden relative">
             <iframe 
@@ -521,6 +512,7 @@
     </div>
   </section>
 
+  <!-- Testimonials Section -->
   <section id="testimonials" class="py-20 bg-dark-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16">
@@ -529,10 +521,8 @@
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
-        
         <!-- Transformation Card 1 -->
         <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between p-6 space-y-4">
-          <!-- Before / After Photo Placeholder -->
           <div class="grid grid-cols-2 gap-2 bg-slate-900 p-2 rounded-xl border border-dark-border">
             <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-white/5 group">
               <img 
@@ -544,235 +534,133 @@
               <span class="absolute top-1 left-1 bg-neutral-900/90 text-slate-300 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Before</span>
               <span class="absolute bottom-1 left-1 text-[9px] text-slate-300 bg-black/60 px-1 rounded">Day 1</span>
             </div>
-            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-brand-orange/50 group">
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-brand-orange/30 group">
               <img 
-                src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=300&q=80" 
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=300&q=80" 
                 alt="Client After Transformation" 
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                onerror="this.src='https://placehold.co/300x400/FF5722/ffffff?text=After'"
+                onerror="this.src='https://placehold.co/300x400/131924/FF5722?text=After'"
               >
               <span class="absolute top-1 left-1 bg-brand-orange text-white text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">After</span>
-              <span class="absolute bottom-1 left-1 text-[9px] text-brand-orange font-bold bg-black/80 px-1 rounded">Month 3</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-brand-orange bg-black/60 px-1 rounded font-bold">12 Weeks</span>
             </div>
           </div>
-
-          <div class="space-y-3">
-            <div class="flex text-brand-orange gap-1 text-xs">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed italic">
-              "Coach Roba simplified natural muscle building for me. Following his advice on local Ethiopian foods helped me build lean muscle consistently."
-            </p>
-          </div>
-
-          <div class="pt-4 border-t border-dark-border flex items-center justify-between text-xs">
-            <div>
-              <p class="font-bold text-white">Yared T.</p>
-              <p class="text-[10px] text-slate-400">Bole, Addis Ababa</p>
-            </div>
-            <span class="bg-brand-orange/10 text-brand-orange px-2.5 py-1 rounded-full font-bold">+6kg Muscle</span>
+          <div>
+            <p class="text-xs text-slate-300 italic">"Coach Roba transformed my diet and workout routine. Dropped 8kg of fat while gaining visible muscle in just 3 months!"</p>
+            <p class="text-xs font-bold text-white mt-2">- Yared T., Addis Ababa</p>
           </div>
         </div>
 
         <!-- Transformation Card 2 -->
         <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between p-6 space-y-4">
-          <!-- Before / After Photo Placeholder -->
           <div class="grid grid-cols-2 gap-2 bg-slate-900 p-2 rounded-xl border border-dark-border">
             <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-white/5 group">
               <img 
-                src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=300&q=80" 
-                alt="Client Before Fat Loss" 
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=300&q=80" 
+                alt="Client Before Transformation" 
                 class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform"
                 onerror="this.src='https://placehold.co/300x400/131924/ffffff?text=Before'"
               >
               <span class="absolute top-1 left-1 bg-neutral-900/90 text-slate-300 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Before</span>
               <span class="absolute bottom-1 left-1 text-[9px] text-slate-300 bg-black/60 px-1 rounded">Day 1</span>
             </div>
-            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-brand-orange/50 group">
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-brand-orange/30 group">
               <img 
-                src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=300&q=80" 
-                alt="Client After Fat Loss" 
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=300&q=80" 
+                alt="Client After Transformation" 
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                onerror="this.src='https://placehold.co/300x400/FF5722/ffffff?text=After'"
+                onerror="this.src='https://placehold.co/300x400/131924/FF5722?text=After'"
               >
               <span class="absolute top-1 left-1 bg-brand-orange text-white text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">After</span>
-              <span class="absolute bottom-1 left-1 text-[9px] text-brand-orange font-bold bg-black/80 px-1 rounded">Month 4</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-brand-orange bg-black/60 px-1 rounded font-bold">16 Weeks</span>
             </div>
           </div>
-
-          <div class="space-y-3">
-            <div class="flex text-brand-orange gap-1 text-xs">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed italic">
-              "The Woyyu Fitness app made workout logging so easy. Coach Roba’s guidance kept me accountable every single day."
-            </p>
-          </div>
-
-          <div class="pt-4 border-t border-dark-border flex items-center justify-between text-xs">
-            <div>
-              <p class="font-bold text-white">Selam M.</p>
-              <p class="text-[10px] text-slate-400">Online Trainee</p>
-            </div>
-            <span class="bg-brand-orange/10 text-brand-orange px-2.5 py-1 rounded-full font-bold">-8kg Fat Loss</span>
+          <div>
+            <p class="text-xs text-slate-300 italic">"The Woyyu App made tracking my daily meals and workouts seamless. Highly recommend 1-on-1 coaching with Roba!"</p>
+            <p class="text-xs font-bold text-white mt-2">- Dawit M., Bole</p>
           </div>
         </div>
 
         <!-- Transformation Card 3 -->
         <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between p-6 space-y-4">
-          <!-- Before / After Photo Placeholder -->
           <div class="grid grid-cols-2 gap-2 bg-slate-900 p-2 rounded-xl border border-dark-border">
             <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-white/5 group">
               <img 
-                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=300&q=80" 
-                alt="Client Before Recomp" 
+                src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=300&q=80" 
+                alt="Client Before Transformation" 
                 class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform"
                 onerror="this.src='https://placehold.co/300x400/131924/ffffff?text=Before'"
               >
               <span class="absolute top-1 left-1 bg-neutral-900/90 text-slate-300 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Before</span>
               <span class="absolute bottom-1 left-1 text-[9px] text-slate-300 bg-black/60 px-1 rounded">Day 1</span>
             </div>
-            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-brand-orange/50 group">
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-brand-orange/30 group">
               <img 
                 src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=300&q=80" 
-                alt="Client After Recomp" 
+                alt="Client After Transformation" 
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                onerror="this.src='https://placehold.co/300x400/FF5722/ffffff?text=After'"
+                onerror="this.src='https://placehold.co/300x400/131924/FF5722?text=After'"
               >
               <span class="absolute top-1 left-1 bg-brand-orange text-white text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">After</span>
-              <span class="absolute bottom-1 left-1 text-[9px] text-brand-orange font-bold bg-black/80 px-1 rounded">Month 2</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-brand-orange bg-black/60 px-1 rounded font-bold">8 Weeks</span>
             </div>
           </div>
-
-          <div class="space-y-3">
-            <div class="flex text-brand-orange gap-1 text-xs">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed italic">
-              "In-person gym sessions with Coach Roba are intense. His push on proper form completely fixed my shoulder pain."
-            </p>
-          </div>
-
-          <div class="pt-4 border-t border-dark-border flex items-center justify-between text-xs">
-            <div>
-              <p class="font-bold text-white">Dawit K.</p>
-              <p class="text-[10px] text-slate-400">Gym Trainee</p>
-            </div>
-            <span class="bg-brand-orange/10 text-brand-orange px-2.5 py-1 rounded-full font-bold">Strength Gain</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="calculator" class="py-20 bg-dark-card border-t border-b border-dark-border">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-      <div>
-        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">Free Tool</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold uppercase text-white mt-2">Daily Calorie Calculator</p>
-        <p class="text-xs text-slate-400 mt-2">Estimate your daily maintenance and target calories.</p>
-      </div>
-
-      <div class="bg-dark-bg p-6 sm:p-8 rounded-3xl border border-dark-border text-left space-y-6">
-        <div class="grid sm:grid-cols-3 gap-4">
           <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-2">Weight (kg)</label>
-            <input type="number" id="calc-weight" placeholder="70" class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-orange">
+            <p class="text-xs text-slate-300 italic">"Natural bodybuilding techniques applied directly to Ethiopian lifestyle. Best fitness decision I've made."</p>
+            <p class="text-xs font-bold text-white mt-2">- Selam A., Kazanchis</p>
           </div>
-          <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-2">Height (cm)</label>
-            <input type="number" id="calc-height" placeholder="175" class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-orange">
-          </div>
-          <div>
-            <label class="block text-xs font-semibold text-slate-300 mb-2">Goal</label>
-            <select id="calc-goal" class="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-orange">
-              <option value="lose">Fat Loss (-15%)</option>
-              <option value="maintain">Maintain Weight</option>
-              <option value="gain">Muscle Gain (+10%)</option>
-            </select>
-          </div>
-        </div>
-
-        <button onclick="calculateCalories()" class="w-full bg-brand-orange hover:bg-brand-orange-dark text-white font-bold text-xs uppercase px-6 py-3.5 rounded-xl transition-all shadow-lg shadow-brand-orange/20">
-          Calculate Target Calories
-        </button>
-
-        <div id="calc-result" class="hidden bg-dark-card p-4 rounded-xl border border-brand-orange/40 text-center space-y-1">
-          <p class="text-xs text-slate-400">Estimated Daily Target:</p>
-          <p id="calc-val" class="text-2xl font-extrabold text-brand-orange">2,200 kcal/day</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="faq" class="py-20 bg-dark-bg">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">Got Questions?</h2>
-        <p class="text-3xl font-extrabold uppercase text-white mt-2">Frequently Asked Questions</p>
-      </div>
-
-      <div class="space-y-4 text-xs sm:text-sm">
-        <div class="bg-dark-card p-5 rounded-2xl border border-dark-border space-y-2">
-          <h4 class="font-bold text-white text-base">How do I start training with Coach Roba?</h4>
-          <p class="text-slate-400 leading-relaxed">You can click the Telegram button or call directly at 0946 364 983 to discuss in-person gym sessions in Addis Ababa or online app coaching.</p>
+  <!-- Footer -->
+  <footer class="bg-dark-card border-t border-dark-border py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-brand-orange flex items-center justify-center text-white text-sm">
+          <i class="fa-solid fa-dumbbell"></i>
         </div>
-
-        <div class="bg-dark-card p-5 rounded-2xl border border-dark-border space-y-2">
-          <h4 class="font-bold text-white text-base">Where can I download the Woyyu Fitness App?</h4>
-          <p class="text-slate-400 leading-relaxed">The Woyyu Fitness App (developed by Horan Technologies) is available through Coach Roba's official Telegram bot or direct package download.</p>
-        </div>
-
-        <div class="bg-dark-card p-5 rounded-2xl border border-dark-border space-y-2">
-          <h4 class="font-bold text-white text-base">Do you provide custom Ethiopian meal plans?</h4>
-          <p class="text-slate-400 leading-relaxed">Yes! All meal plans are customized around accessible, nutritious local Ethiopian food sources like eggs, meat, injera macros, milk, and lentils.</p>
-        </div>
+        <span class="text-sm font-bold text-white">Woyyu Fitness &copy; 2026. All rights reserved.</span>
       </div>
-    </div>
-  </section>
-
-  <footer class="py-12 bg-black border-t border-dark-border text-center text-xs text-slate-500">
-    <div class="max-w-7xl mx-auto px-4 space-y-4">
-      <div class="flex justify-center gap-6 text-slate-400 text-lg">
-        <a href="https://tiktok.com/@roba_udesa" target="_blank" aria-label="TikTok Profile" class="hover:text-brand-orange transition-colors"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="https://t.me/woyyu_fitness_bot" target="_blank" aria-label="Telegram Bot" class="hover:text-brand-orange transition-colors"><i class="fa-brands fa-telegram"></i></a>
-        <a href="tel:+251946364983" aria-label="Direct Call" class="hover:text-brand-orange transition-colors"><i class="fa-solid fa-phone"></i></a>
+      <div class="flex gap-6 text-slate-400 text-lg">
+        <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="hover:text-brand-orange transition-colors"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://tiktok.com/@roba_udesa" target="_blank" class="hover:text-brand-orange transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="tel:+251946364983" class="hover:text-brand-orange transition-colors"><i class="fa-solid fa-phone"></i></a>
       </div>
-      <p>&copy; 2026 Coach Roba | Woyyu Fitness. All Rights Reserved. Addis Ababa, Ethiopia.<br> Designed by Abdi Abera <br> phone number +251925256424</p>
     </div>
   </footer>
 
+  <!-- Mobile Menu Toggle Script -->
   <script>
-    // Mobile Menu Toggle
-    const btn = document.getElementById('mobile-menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    if (btn && menu) {
-      btn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-      });
-    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = menuBtn ? menuBtn.querySelector('i') : null;
 
-    // Calorie Calculator Logic
-    function calculateCalories() {
-      const weight = parseFloat(document.getElementById('calc-weight').value) || 70;
-      const height = parseFloat(document.getElementById('calc-height').value) || 175;
-      const goal = document.getElementById('calc-goal').value;
+      if (menuBtn && mobileMenu && menuIcon) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
 
-      let bmr = (10 * weight) + (6.25 * height) - (5 * 25) + 5;
-      let tdee = bmr * 1.45;
+          if (mobileMenu.classList.contains('hidden')) {
+            menuIcon.classList.remove('fa-xmark');
+            menuIcon.classList.add('fa-bars');
+          } else {
+            menuIcon.classList.remove('fa-bars');
+            menuIcon.classList.add('fa-xmark');
+          }
+        });
 
-      if (goal === 'lose') tdee *= 0.85;
-      if (goal === 'gain') tdee *= 1.10;
-
-      const resultElement = document.getElementById('calc-result');
-      const valElement = document.getElementById('calc-val');
-      
-      if (resultElement && valElement) {
-        valElement.innerText = `${Math.round(tdee)} kcal / day`;
-        resultElement.classList.remove('hidden');
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.remove('fa-xmark');
+            menuIcon.classList.add('fa-bars');
+          });
+        });
       }
-    }
+    });
   </script>
 </body>
 </html>
