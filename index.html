@@ -106,7 +106,7 @@
       </a>
 
       <!-- Mobile Menu Toggle -->
-      <button id="mobile-menu-btn" class="lg:hidden text-slate-300 text-2xl focus:outline-none" aria-label="Toggle Navigation Menu">
+      <button id="mobile-menu-btn" class="lg:hidden text-slate-300 text-2xl focus:outline-none p-2" aria-label="Toggle Navigation Menu">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
@@ -631,7 +631,7 @@
     </div>
   </footer>
 
-  <!-- Mobile Menu Toggle Script -->
+  <!-- Mobile Navigation Auto-Close Script -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const menuBtn = document.getElementById('mobile-menu-btn');
@@ -639,7 +639,18 @@
       const menuIcon = menuBtn ? menuBtn.querySelector('i') : null;
 
       if (menuBtn && mobileMenu && menuIcon) {
-        menuBtn.addEventListener('click', () => {
+        // Helper to close menu and reset hamburger icon
+        const closeMenu = () => {
+          if (!mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.remove('fa-xmark');
+            menuIcon.classList.add('fa-bars');
+          }
+        };
+
+        // Toggle on menu button tap
+        menuBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
           mobileMenu.classList.toggle('hidden');
 
           if (mobileMenu.classList.contains('hidden')) {
@@ -651,13 +662,23 @@
           }
         });
 
+        // Auto-close menu when scrolling down/up
+        window.addEventListener('scroll', closeMenu, { passive: true });
+
+        // Auto-close menu when touch swiping on mobile screens
+        window.addEventListener('touchmove', closeMenu, { passive: true });
+
+        // Close menu when tapping any link inside it
         const mobileLinks = mobileMenu.querySelectorAll('a');
         mobileLinks.forEach(link => {
-          link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            menuIcon.classList.remove('fa-xmark');
-            menuIcon.classList.add('fa-bars');
-          });
+          link.addEventListener('click', closeMenu);
+        });
+
+        // Close menu when tapping outside of header/menu
+        document.addEventListener('click', (e) => {
+          if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+            closeMenu();
+          }
         });
       }
     });
