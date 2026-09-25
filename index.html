@@ -1,89 +1,76 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coach Roba | Woyyu Fitness - Addis Ababa's Premier Fitness Coach</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coach Roba | Woyyu Fitness - Personal Trainer in Addis Ababa</title>
+  <meta name="description" content="Build natural muscle, burn fat, and transform your physique with Coach Roba (Woyyu Fitness) in Addis Ababa. In-person gym coaching & Woyyu Fitness App by Horan Technologies.">
+  <meta name="keywords" content="Coach Roba, Woyyu Fitness, Personal Trainer Addis Ababa, Fitness Coach Ethiopia, Woyyu Fitness App, Horan Technologies, Gym Trainer Bole">
+  <meta name="geo.region" content="ET-AA">
+  <meta name="geo.placename" content="Addis Ababa">
 
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#fff3e0',
-                            100: '#ffe0b2',
-                            500: '#FF5722',
-                            600: '#E64A19',
-                            700: '#D84315',
-                            accent: '#FF7043'
-                        },
-                        darkbg: '#0A0D14',
-                        cardbg: '#131924',
-                        cardborder: '#1E2638',
-                        muted: '#94A3B8'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            'brand-orange': '#FF5722',
+            'brand-orange-dark': '#E64A19',
+            'brand-blue': '#0B57D0',
+            'dark-bg': '#0A0D14',
+            'dark-card': '#131924',
+            'dark-border': '#20293A'
+          }
         }
-    </script>
-    <style>
-        body {
-            background-color: #0A0D14;
-            color: #F8FAFC;
-            font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
-        }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0A0D14;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #1E2638;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #FF5722;
-        }
-        /* Glow effects */
-        .orange-glow {
-            box-shadow: 0 0 25px rgba(255, 87, 34, 0.25);
-        }
-        .orange-border-glow {
-            box-shadow: 0 0 15px rgba(255, 87, 34, 0.15);
-        }
-        /* Backdrop blur header fallback */
-        .glass-nav {
-            background: rgba(10, 13, 20, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-    </style>
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Woyyu Fitness - Coach Roba",
+    "image": "heroroba.png",
+    "telephone": "+251946364983",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Addis Ababa",
+      "addressRegion": "Addis Ababa",
+      "addressCountry": "ET"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 9.0108,
+      "longitude": 38.7613
+    },
+    "url": "https://woyyufitness.com",
+    "sameAs": [
+      "https://t.me/woyyu_fitness_bot",
+      "https://tiktok.com/@roba_udesa"
+    ],
+    "description": "Lifetime natural fitness coaching, custom diet plans, and workout routines by Coach Roba in Addis Ababa."
+  }
+  </script>
 </head>
-<body class="bg-darkbg text-slate-100 antialiased selection:bg-brand-500 selection:text-white">
+<body class="bg-dark-bg text-slate-100 font-sans antialiased selection:bg-brand-orange selection:text-white">
 
-    <!-- ========================================== -->
-    <!-- HEADER / NAVIGATION                        -->
-    <!-- ========================================== -->
-    <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-cardborder transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-             <div class="flex items-center justify-between h-20">
-              <!-- Brand Logo -->
+  <!-- Navigation Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-dark-bg/90 backdrop-blur-md border-b border-dark-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
       <a href="#" class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-xl bg-brand-orange flex items-center justify-center text-white text-xl shadow-lg shadow-brand-orange/20 overflow-hidden">
           <img 
@@ -99,1303 +86,898 @@
         </div>
       </a>
 
-                <!-- Desktop Navigation Links -->
-                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium">
-                    <a href="#about" class="text-slate-300 hover:text-brand-500 transition-colors">About Roba</a>
-                    <a href="#programs" class="text-slate-300 hover:text-brand-500 transition-colors">Programs</a>
-                    <a href="#app" class="text-slate-300 hover:text-brand-500 transition-colors">Woyyu App</a>
-                    <a href="#transformations" class="text-slate-300 hover:text-brand-500 transition-colors">Transformations</a>
-                    <a href="#calculator" class="text-slate-300 hover:text-brand-500 transition-colors">Calorie Calculator</a>
-                    <a href="#locations" class="text-slate-300 hover:text-brand-500 transition-colors">Gyms</a>
-                    <a href="#faq" class="text-slate-300 hover:text-brand-500 transition-colors">FAQ</a>
-                </nav>
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center space-x-7 text-xs font-semibold uppercase tracking-wider text-slate-300">
+        <a href="#about" class="hover:text-brand-orange transition-colors">About</a>
+        <a href="#app" class="hover:text-brand-orange transition-colors flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
+          Woyyu App
+        </a>
+        <a href="#programs" class="hover:text-brand-orange transition-colors">Programs</a>
+        <a href="#locations" class="hover:text-brand-orange transition-colors">Addis Ababa Gyms</a>
+        <a href="#testimonials" class="hover:text-brand-orange transition-colors">Testimonials</a>
+        <a href="#calculator" class="hover:text-brand-orange transition-colors">Calorie Calculator</a>
+        <a href="#faq" class="hover:text-brand-orange transition-colors">FAQ</a>
+      </nav>
 
-                <!-- Action CTAs (Desktop) -->
-                <div class="hidden md:flex items-center space-x-4">
-                    <a href="https://t.me/coachroba" target="_blank" rel="noopener noreferrer" 
-                       class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-brand-500 hover:bg-brand-600 text-white transition-all transform hover:-translate-y-0.5 orange-glow">
-                        <i class="fa-brands fa-telegram text-base"></i>
-                        <span>Telegram Channel</span>
-                    </a>
-                    <a href="tel:+251911000000" 
-                       class="p-2.5 rounded-xl bg-cardbg border border-cardborder hover:border-brand-500 text-slate-300 hover:text-brand-500 transition-all">
-                        <i class="fa-solid fa-phone text-sm"></i>
-                    </a>
-                </div>
+      <!-- Action Button -->
+      <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-orange-dark text-white text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-xl transition-all shadow-lg shadow-brand-orange/20 transform hover:-translate-y-0.5">
+        <i class="fa-brands fa-telegram text-base"></i>
+        <span>Start Training</span>
+      </a>
 
-                <!-- Mobile Hamburger Button -->
-                <div class="flex items-center lg:hidden gap-3">
-                    <a href="https://t.me/coachroba" target="_blank" class="md:hidden px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-500 text-white">
-                        Telegram
-                    </a>
-                    <button id="mobile-menu-btn" 
-                            type="button"
-                            aria-label="Toggle Navigation Menu"
-                            class="p-2.5 rounded-xl bg-cardbg border border-cardborder text-slate-200 hover:text-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500">
-                        <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
-                    </button>
-                </div>
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-btn" class="lg:hidden text-slate-300 text-2xl focus:outline-none p-2" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-dark-card border-b border-dark-border px-4 py-6 space-y-4">
+      <a href="#about" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">About</a>
+      <a href="#app" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">Woyyu App</a>
+      <a href="#programs" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">Programs</a>
+      <a href="#locations" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">Addis Ababa Gyms</a>
+      <a href="#testimonials" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">Testimonials</a>
+      <a href="#calculator" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">Calorie Calculator</a>
+      <a href="#faq" class="block text-sm font-semibold text-slate-300 hover:text-brand-orange">FAQ</a>
+      <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="inline-flex w-full justify-center items-center gap-2 bg-brand-orange text-white text-xs font-bold uppercase px-4 py-3 rounded-xl">
+        <i class="fa-brands fa-telegram"></i> Start Training
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-gradient-to-b from-dark-bg via-dark-card to-dark-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-bold tracking-wider uppercase">
+            <i class="fa-solid fa-shield-halved"></i> 100% Lifetime Natural Personal Trainer
+          </div>
+
+          <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white uppercase leading-none">
+            Build Muscle. <br>
+            <span class="text-brand-orange">Burn Fat.</span> <br>
+            Transform in Addis.
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            Custom natural physique transformation programs, Ethiopian nutrition planning, in-person gym coaching in Addis Ababa, and global online coaching powered by the <span class="text-white font-semibold">Woyyu Fitness App</span>.
+          </p>
+
+          <!-- Quick Stats -->
+          <div class="grid grid-cols-3 gap-4 py-4 border-y border-dark-border max-w-md mx-auto lg:mx-0">
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold text-white">40.3K+</p>
+              <p class="text-[11px] text-slate-400 font-semibold uppercase">Followers</p>
             </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold text-brand-orange">621K+</p>
+              <p class="text-[11px] text-slate-400 font-semibold uppercase">Likes</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+              <p class="text-[11px] text-slate-400 font-semibold uppercase">Natural</p>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-orange hover:bg-brand-orange-dark text-white font-bold text-sm uppercase px-8 py-4 rounded-xl transition-all shadow-xl shadow-brand-orange/20">
+              <i class="fa-brands fa-telegram text-xl"></i>
+              <span>Join Telegram Bot</span>
+            </a>
+            <a href="tel:+251946364983" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-dark-card hover:bg-slate-800 text-white font-bold text-sm uppercase px-8 py-4 rounded-xl border border-dark-border transition-all">
+              <i class="fa-solid fa-phone text-brand-orange"></i>
+              <span>0946 364 983</span>
+            </a>
+          </div>
         </div>
 
-        <!-- Mobile Drawer Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-cardbg border-b border-cardborder shadow-2xl transition-all duration-300">
-            <div class="px-5 pt-4 pb-6 space-y-3">
-                <a href="#about" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-500 transition-colors">About Coach Roba</a>
-                <a href="#programs" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-500 transition-colors">Coaching Programs</a>
-                <a href="#app" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-500 transition-colors">Woyyu Fitness App</a>
-                <a href="#transformations" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-500 transition-colors">Client Transformations</a>
-                <a href="#calculator" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-500 transition-colors">Calorie Calculator</a>
-                <a href="#locations" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-500 transition-colors">Addis Ababa Gyms</a>
-                <a href="#faq" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-500 transition-colors">FAQ</a>
-
-                <div class="pt-4 border-t border-slate-800 flex flex-col gap-3">
-                    <a href="https://t.me/coachroba" target="_blank" 
-                       class="w-full py-3 rounded-xl font-bold text-center bg-brand-500 text-white flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-telegram text-lg"></i>
-                        Join Telegram Community
-                    </a>
-                    <a href="tel:+251911000000" 
-                       class="w-full py-3 rounded-xl font-bold text-center bg-cardborder text-slate-200 hover:bg-slate-700 flex items-center justify-center gap-2">
-                        <i class="fa-solid fa-phone text-sm"></i>
-                        Call +251 911 000 000
-                    </a>
-                </div>
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="w-full max-w-sm bg-dark-card p-6 rounded-3xl border border-dark-border shadow-2xl space-y-6 text-center">
+            <div class="w-28 h-28 rounded-2xl overflow-hidden mx-auto border-2 border-brand-orange shadow-lg shadow-brand-orange/30 relative">
+              <img 
+                src="heroroba.png" 
+                alt="Coach Roba - Woyyu Fitness" 
+                class="w-full h-full object-cover" 
+                onerror="this.src='https://placehold.co/400x400/131924/FF5722?text=Coach+Roba'"
+              >
             </div>
-            <!-- Swipe drag visual handle -->
-            <div class="w-12 h-1 bg-slate-700 rounded-full mx-auto mb-2"></div>
+            <div>
+              <h3 class="text-xl font-bold text-white uppercase">Coach Roba</h3>
+              <p class="text-xs text-brand-orange font-semibold tracking-wider uppercase">@roba_udesa</p>
+            </div>
+            <p class="text-xs text-slate-300 italic leading-relaxed">
+              "Helping you achieve your dream physique naturally through structured hypertrophy routines and practical Ethiopian meal guidelines."
+            </p>
+            <div class="bg-dark-bg p-4 rounded-xl border border-dark-border text-left text-xs space-y-2 text-slate-300">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-orange"></i>
+                <span>In-Person Personal Training (Addis Ababa)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-orange"></i>
+                <span>Woyyu Fitness Mobile App Access</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-orange"></i>
+                <span>Tailored Meal Plans for Local Foods</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
 
-    <!-- ========================================== -->
-    <!-- HERO SECTION                               -->
-    <!-- ========================================== -->
-    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <!-- Background Ambient Glow -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+      </div>
+    </div>
+  </section>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Hero Content -->
-                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-500 text-xs font-bold uppercase tracking-widest">
-                        <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
-                        100% Natural Ethiopian Bodybuilding
-                    </div>
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-dark-bg border-t border-dark-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center space-y-4 mb-12">
+        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">About Coach Roba</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold uppercase text-white">Lifetime Natural Discipline</p>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Coach Roba is a dedicated fitness model and natural bodybuilding expert based in Addis Ababa, Ethiopia. With over 40,000 active followers and hundreds of client success stories, Coach Roba specializes in helping beginners and advanced athletes build athletic muscle and lose fat naturally.
+        </p>
+      </div>
 
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
-                        Transform Your Body <br class="hidden sm:inline">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 via-orange-400 to-amber-500">
-                            100% Naturally
-                        </span> <br>
-                        With Coach Roba
-                    </h1>
-
-                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Addis Ababa's top-tier fitness creator and natural coach. Customized hypertrophy programs, fat loss nutrition tailored to Ethiopian diets, and science-driven gym coaching.
-                    </p>
-
-                    <!-- CTAs -->
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href="https://t.me/coachroba" target="_blank" 
-                           class="w-full sm:w-auto px-8 py-4 rounded-xl font-extrabold text-base bg-brand-500 hover:bg-brand-600 text-white shadow-lg orange-glow flex items-center justify-center gap-3 transition-all transform hover:-translate-y-1">
-                            <i class="fa-brands fa-telegram text-xl"></i>
-                            Join Telegram Channel
-                        </a>
-                        <a href="tel:+251911000000" 
-                           class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-base bg-cardbg border border-cardborder hover:border-brand-500 text-white flex items-center justify-center gap-3 transition-all">
-                            <i class="fa-solid fa-phone text-brand-500"></i>
-                            Book 1-on-1 Session
-                        </a>
-                    </div>
-
-                    <!-- Quick Stats Grid -->
-                    <div class="pt-8 border-t border-cardborder grid grid-cols-2 sm:grid-cols-4 gap-4">
-                        <div class="bg-cardbg/60 p-4 rounded-xl border border-cardborder text-center lg:text-left">
-                            <div class="text-2xl sm:text-3xl font-black text-white">40.3K+</div>
-                            <div class="text-xs text-muted font-medium mt-1">Social Followers</div>
-                        </div>
-                        <div class="bg-cardbg/60 p-4 rounded-xl border border-cardborder text-center lg:text-left">
-                            <div class="text-2xl sm:text-3xl font-black text-brand-500">621K+</div>
-                            <div class="text-xs text-muted font-medium mt-1">TikTok Likes</div>
-                        </div>
-                        <div class="bg-cardbg/60 p-4 rounded-xl border border-cardborder text-center lg:text-left">
-                            <div class="text-2xl sm:text-3xl font-black text-white">100%</div>
-                            <div class="text-xs text-muted font-medium mt-1">Natural Guarantee</div>
-                        </div>
-                        <div class="bg-cardbg/60 p-4 rounded-xl border border-cardborder text-center lg:text-left">
-                            <div class="text-2xl sm:text-3xl font-black text-amber-400">500+</div>
-                            <div class="text-xs text-muted font-medium mt-1">Addis Clients</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Coach Profile Card -->
-                <div class="lg:col-span-5">
-                    <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <!-- Decorative border overlay -->
-                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-brand-500 to-amber-500 opacity-30 blur-lg"></div>
-
-                        <div class="relative bg-cardbg border border-cardborder rounded-3xl overflow-hidden shadow-2xl p-3">
-                            <div class="relative h-[420px] sm:h-[480px] rounded-2xl overflow-hidden bg-slate-900">
-                                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80" 
-                                     alt="Coach Roba - Woyyu Fitness Founder" 
-                                     class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
-                                     onerror="this.onerror=null; this.src='https://placehold.co/600x800/131924/FF5722?text=COACH+ROBA';">
-                                
-                                <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-transparent to-transparent opacity-90"></div>
-
-                                <!-- Floating Badges -->
-                                <div class="absolute top-4 left-4 bg-darkbg/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-cardborder text-xs font-semibold text-slate-200 flex items-center gap-2">
-                                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-                                    <span>Accepting Clients in Addis Ababa</span>
-                                </div>
-
-                                <div class="absolute bottom-6 left-6 right-6 text-left space-y-2">
-                                    <div class="flex items-center gap-2 text-brand-500 font-bold text-xs uppercase tracking-widest">
-                                        <i class="fa-solid fa-award"></i> Master Trainer & Creator
-                                    </div>
-                                    <h3 class="text-2xl font-black text-white">Coach Roba</h3>
-                                    <p class="text-xs text-slate-300 leading-normal">
-                                        "Fitness is not about short-term shortcuts. It's about sustainable natural hypertrophy, strong mental discipline, and standardizing local Ethiopian nutrition."
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      <!-- Video & Media Layout -->
+      <div class="grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 bg-dark-card rounded-3xl p-4 border border-dark-border shadow-2xl relative overflow-hidden group">
+          <div class="aspect-video w-full rounded-2xl bg-black overflow-hidden relative">
+            <video class="w-full h-full object-contain rounded-2xl" controls poster="heroroba.png">
+              <source src="roba.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-    </section>
 
-    <!-- ========================================== -->
-    <!-- ABOUT & VIDEO SHOWCASE SECTION             -->
-    <!-- ========================================== -->
-    <section id="about" class="py-20 bg-darkbg/80 border-t border-cardborder">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <span class="text-brand-500 text-xs font-bold uppercase tracking-widest">About Coach Roba & Woyyu</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white">Science-Based Natural Muscle Building</h2>
-                <p class="text-muted text-base">
-                    Watch Coach Roba demonstrate proper lifting mechanics, peak contraction techniques, and natural physique principles tailored for Ethiopian lifters.
-                </p>
+        <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+          <div class="bg-dark-card rounded-2xl border border-dark-border aspect-square flex flex-col items-center justify-center p-3 text-center overflow-hidden relative group">
+            <img 
+              src="gym training.jpg" 
+              alt="Gym Training Form" 
+              class="absolute inset-0 w-full h-full object-contain opacity-60 group-hover:scale-105 transition-transform"
+              onerror="this.src='https://placehold.co/400x400/131924/FF5722?text=Gym+Session'"
+            >
+            <div class="relative z-10 bg-black/70 p-2 rounded-xl backdrop-blur-sm">
+              <i class="fa-solid fa-dumbbell text-xl text-brand-orange mb-1"></i>
+              <span class="block text-xs font-bold text-white">Gym Training</span>
+              <span class="text-[9px] text-slate-300">Form & Technique</span>
             </div>
+          </div>
 
-            <!-- Video Showcase Box Container -->
-            <div class="max-w-4xl mx-auto mb-16">
-                <div class="bg-cardbg border border-cardborder rounded-3xl p-4 sm:p-6 shadow-2xl space-y-4">
-                    
-                    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-2 border-b border-cardborder">
-                        <div class="flex items-center gap-3">
-                            <span class="p-2 rounded-lg bg-brand-500/10 text-brand-500">
-                                <i class="fa-solid fa-video text-lg"></i>
-                            </span>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">Coach Roba Technique Showcase</h4>
-                                <p class="text-xs text-muted">Proper bench press, squat depth & posture alignment</p>
-                            </div>
-                        </div>
+          <div class="bg-dark-card rounded-2xl border border-dark-border aspect-square flex flex-col items-center justify-center p-3 text-center overflow-hidden relative group">
+            <img 
+              src="natural physique.png" 
+              alt="Physique Model Photo" 
+              class="absolute inset-0 w-full h-full object-contain opacity-60 group-hover:scale-105 transition-transform"
+              onerror="this.src='https://placehold.co/400x400/131924/FF5722?text=Physique'"
+            >
+           
+          </div>
 
-                        <!-- Fit Mode Switcher Controls for Video Box -->
-                        <div class="flex items-center bg-slate-900 p-1 rounded-xl border border-cardborder text-xs font-medium">
-                            <button id="btn-fit-cover" onclick="setVideoFit('object-cover')" 
-                                    class="px-3 py-1.5 rounded-lg bg-brand-500 text-white font-semibold transition-all">
-                                Cover Fill
-                            </button>
-                            <button id="btn-fit-contain" onclick="setVideoFit('object-contain')" 
-                                    class="px-3 py-1.5 rounded-lg text-slate-400 hover:text-white transition-all">
-                                Fit Inside
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Video Container Box -->
-                    <div class="aspect-video w-full rounded-2xl bg-black overflow-hidden relative group border border-cardborder shadow-inner">
-                        <video id="roba-video" 
-                               class="w-full h-full object-cover rounded-2xl transition-all duration-300" 
-                               controls 
-                               poster="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80">
-                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
-                            Your browser does not support HTML5 video.
-                        </video>
-                    </div>
-
-                    <div class="flex items-center justify-between text-xs text-slate-400 px-2 pt-1">
-                        <span><i class="fa-solid fa-circle-info text-brand-500 mr-1"></i> Switch fit modes above to preview how video fits the container.</span>
-                        <span class="font-semibold text-slate-300">1080p HD • Natural Fitness</span>
-                    </div>
-                </div>
+          <div class="col-span-2 bg-dark-card rounded-2xl border border-dark-border h-32 flex flex-col items-center justify-center p-4 text-center overflow-hidden relative group">
+            <img 
+              src="addis abeba fitness.jpg" 
+              alt="Addis Ababa Fitness Shoot" 
+              class="absolute inset-0 w-full h-full object-contain opacity-50 group-hover:scale-105 transition-transform"
+              onerror="this.src='https://placehold.co/800x300/131924/FF5722?text=Outdoor+Shoot'"
+            >
+            <div class="relative z-10 bg-black/70 px-4 py-2 rounded-xl backdrop-blur-sm">
+              <i class="fa-solid fa-camera text-xl text-brand-orange mb-1"></i>
+              <span class="block text-xs font-bold text-white">Addis Ababa Fitness Gallery</span>
+              <span class="text-[10px] text-slate-300">In-person client coaching moments</span>
             </div>
-
-            <!-- Photo Gallery Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-                <div class="group relative rounded-2xl overflow-hidden h-64 bg-cardbg border border-cardborder">
-                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" 
-                         alt="Coach Roba Heavy Squats" 
-                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x600/131924/FF5722?text=HEAVY+SQUATS';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-transparent opacity-80"></div>
-                    <div class="absolute bottom-3 left-3 right-3 text-xs font-bold text-white">Compound Training</div>
-                </div>
-
-                <div class="group relative rounded-2xl overflow-hidden h-64 bg-cardbg border border-cardborder">
-                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" 
-                         alt="Coach Roba Natural Physique" 
-                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x600/131924/FF5722?text=NATURAL+PHYSIQUE';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-transparent opacity-80"></div>
-                    <div class="absolute bottom-3 left-3 right-3 text-xs font-bold text-white">Natural Peak Conditioning</div>
-                </div>
-
-                <div class="group relative rounded-2xl overflow-hidden h-64 bg-cardbg border border-cardborder">
-                    <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=600&q=80" 
-                         alt="Coach Roba Gym Client Coaching" 
-                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x600/131924/FF5722?text=1-ON-1+COACHING';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-transparent opacity-80"></div>
-                    <div class="absolute bottom-3 left-3 right-3 text-xs font-bold text-white">Addis Gym Coaching</div>
-                </div>
-
-                <div class="group relative rounded-2xl overflow-hidden h-64 bg-cardbg border border-cardborder">
-                    <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" 
-                         alt="Coach Roba Ethiopian Diet Prep" 
-                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x600/131924/FF5722?text=ETHIOPIAN+DIET';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-transparent opacity-80"></div>
-                    <div class="absolute bottom-3 left-3 right-3 text-xs font-bold text-white">Injera & Macro Balancing</div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- ========================================== -->
-    <!-- WOYYU FITNESS APP SHOWCASE                 -->
-    <!-- ========================================== -->
-    <section id="app" class="py-20 bg-cardbg/40 border-t border-cardborder relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- App Details Left -->
-                <div class="lg:col-span-6 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider">
-                        <i class="fa-solid fa-microchip"></i> Powered by Horan Technologies
-                    </div>
+      </div>
+    </div>
+  </section>
 
-                    <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight">
-                        Woyyu Fitness App <br>
-                        <span class="text-brand-500">Your Gym Partner</span>
-                    </h2>
-
-                    <p class="text-slate-300 text-base leading-relaxed">
-                        Engineered in partnership with <strong>Horan Technologies</strong>, Woyyu Fitness provides a modern digital experience for tracking gym workouts, computing local Ethiopian meals (Injera, Teff, Eggs, Chicken, Beef), and staying connected directly with Coach Roba.
-                    </p>
-
-                    <!-- Feature Bullet Points -->
-                    <div class="space-y-4 pt-2">
-                        <div class="flex items-start gap-3">
-                            <div class="p-2 rounded-lg bg-brand-500/20 text-brand-500 mt-1">
-                                <i class="fa-solid fa-utensils"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">Ethiopian Local Meal Database</h4>
-                                <p class="text-xs text-muted">Accurate macro breakdown for Injera, Shiro, Tibs, Oats, and local staples.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <div class="p-2 rounded-lg bg-brand-500/20 text-brand-500 mt-1">
-                                <i class="fa-solid fa-dumbbell"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">Hypertrophy Set & Rep Tracker</h4>
-                                <p class="text-xs text-muted">Log working sets, RPE intensity, and rest timers designed by Roba.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <div class="p-2 rounded-lg bg-brand-500/20 text-brand-500 mt-1">
-                                <i class="fa-solid fa-chart-line"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">Weekly Progress Analytics</h4>
-                                <p class="text-xs text-muted">Track body weight trends, body fat percentages, and strength PRs.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- App Tech Specs -->
-                    <div class="p-4 rounded-2xl bg-slate-900/80 border border-cardborder grid grid-cols-3 gap-4 text-center">
-                        <div>
-                            <div class="text-xs text-muted">Version</div>
-                            <div class="text-sm font-bold text-white mt-0.5">v2.4.1</div>
-                        </div>
-                        <div>
-                            <div class="text-xs text-muted">Platform</div>
-                            <div class="text-sm font-bold text-white mt-0.5">Android & iOS</div>
-                        </div>
-                        <div>
-                            <div class="text-xs text-muted">User Rating</div>
-                            <div class="text-sm font-bold text-amber-400 mt-0.5">★ 4.9 / 5.0</div>
-                        </div>
-                    </div>
-
-                    <!-- App Download CTA Buttons -->
-                    <div class="flex flex-wrap items-center gap-4 pt-2">
-                        <a href="https://play.google.com" target="_blank" 
-                           class="px-6 py-3.5 rounded-xl bg-slate-900 border border-cardborder hover:border-brand-500 text-white font-bold text-sm flex items-center gap-3 transition-all">
-                            <i class="fa-brands fa-google-play text-2xl text-emerald-400"></i>
-                            <div class="text-left">
-                                <div class="text-[10px] text-muted uppercase">Get it on</div>
-                                <div class="text-xs font-black">Google Play</div>
-                            </div>
-                        </a>
-
-                        <a href="https://t.me/coachroba" target="_blank" 
-                           class="px-6 py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm flex items-center gap-3 shadow-lg orange-glow transition-all">
-                            <i class="fa-solid fa-download text-lg"></i>
-                            <span>Download APK Direct</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Realistic Mobile Screen Mockups Right -->
-                <div class="lg:col-span-6 flex justify-center items-center gap-4 sm:gap-6">
-                    
-                    <!-- Screen Mockup 1 -->
-                    <div class="w-1/2 max-w-[240px] bg-darkbg rounded-[36px] border-4 border-slate-800 p-3 shadow-2xl relative transform -rotate-2 hover:rotate-0 transition-transform duration-300">
-                        <!-- Screen Header -->
-                        <div class="w-20 h-4 bg-slate-800 rounded-full mx-auto mb-3"></div>
-                        <div class="bg-cardbg rounded-[24px] p-3 space-y-3 text-left">
-                            <div class="flex items-center justify-between text-[10px] text-muted">
-                                <span>TODAY'S WORKOUT</span>
-                                <span class="text-brand-500 font-bold">WOYYU PRO</span>
-                            </div>
-                            <div class="text-xs font-extrabold text-white">Push A - Chest & Shoulders</div>
-                            
-                            <div class="space-y-2">
-                                <div class="bg-slate-900 p-2 rounded-xl text-[10px] space-y-1">
-                                    <div class="flex justify-between text-slate-300 font-semibold">
-                                        <span>Incline Dumbbell Press</span>
-                                        <span class="text-brand-500">4 Sets</span>
-                                    </div>
-                                    <div class="text-muted">Set 1: 32kg x 10 reps (RPE 8)</div>
-                                    <div class="text-muted">Set 2: 34kg x 8 reps (RPE 9)</div>
-                                </div>
-
-                                <div class="bg-slate-900 p-2 rounded-xl text-[10px] space-y-1">
-                                    <div class="flex justify-between text-slate-300 font-semibold">
-                                        <span>Cable Lateral Raise</span>
-                                        <span class="text-brand-500">3 Sets</span>
-                                    </div>
-                                    <div class="text-muted">Set 1: 12.5kg x 15 reps</div>
-                                </div>
-                            </div>
-
-                            <div class="w-full py-2 bg-brand-500 text-center rounded-xl text-[10px] font-bold text-white">
-                                Complete Workout Log
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Screen Mockup 2 -->
-                    <div class="w-1/2 max-w-[240px] bg-darkbg rounded-[36px] border-4 border-slate-800 p-3 shadow-2xl relative transform rotate-2 hover:rotate-0 transition-transform duration-300 mt-8">
-                        <div class="w-20 h-4 bg-slate-800 rounded-full mx-auto mb-3"></div>
-                        <div class="bg-cardbg rounded-[24px] p-3 space-y-3 text-left">
-                            <div class="flex items-center justify-between text-[10px] text-muted">
-                                <span>DIET & MACROS</span>
-                                <span class="text-emerald-400 font-bold">ETHIOPIA</span>
-                            </div>
-                            <div class="text-xs font-extrabold text-white">Daily Target: 2,650 kcal</div>
-                            
-                            <!-- Macro Progress Bar -->
-                            <div class="space-y-1.5">
-                                <div class="flex justify-between text-[9px] text-slate-300">
-                                    <span>Protein (180g)</span>
-                                    <span class="text-brand-500 font-bold">85%</span>
-                                </div>
-                                <div class="w-full h-1.5 bg-slate-900 rounded-full overflow-hidden">
-                                    <div class="w-[85%] h-full bg-brand-500"></div>
-                                </div>
-
-                                <div class="flex justify-between text-[9px] text-slate-300">
-                                    <span>Carbs (280g)</span>
-                                    <span class="text-amber-400 font-bold">70%</span>
-                                </div>
-                                <div class="w-full h-1.5 bg-slate-900 rounded-full overflow-hidden">
-                                    <div class="w-[70%] h-full bg-amber-400"></div>
-                                </div>
-                            </div>
-
-                            <div class="bg-slate-900 p-2 rounded-xl text-[10px] space-y-1">
-                                <div class="font-semibold text-slate-200">Logged Ethiopian Meals:</div>
-                                <div class="text-muted">1. Injera (2 Roll) + Doro Wet</div>
-                                <div class="text-muted">2. 4 Whole Eggs + Toast</div>
-                            </div>
-
-                            <div class="w-full py-2 bg-emerald-600 text-center rounded-xl text-[10px] font-bold text-white">
-                                Add Meal +
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
+  <!-- App Showcase Section -->
+  <section id="app" class="py-20 bg-dark-card border-t border-b border-dark-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-orange to-red-500 p-3 shadow-lg shrink-0">
+              <div class="w-full h-full border-2 border-white/80 rounded-lg flex items-center justify-center text-white">
+                <i class="fa-solid fa-dumbbell text-2xl"></i>
+              </div>
             </div>
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Woyyu Fitness</h2>
+              <p class="text-xs font-semibold text-brand-blue">Horan Technologies</p>
+              <div class="flex items-center gap-4 text-xs text-slate-400 mt-2">
+                <span><i class="fa-solid fa-download text-slate-300"></i> 9.2 MB</span>
+                <span>|</span>
+                <span class="border border-slate-600 px-1 rounded text-[10px] font-bold">3+</span>
+                <span>Rated for 3+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto bg-brand-blue hover:bg-blue-700 text-white font-bold text-sm px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-blue-500/20 gap-2">
+              <i class="fa-brands fa-google-play text-lg"></i>
+              <span>Install Woyyu Fitness</span>
+            </a>
+          </div>
+
+          <div class="space-y-3 pt-4 border-t border-dark-border">
+            <h3 class="text-base font-bold text-white">About this app</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Woyyu Fitness — personal training, meal plans, and progress tracking for clients. Developed by Horan Technologies specifically for Coach Roba's trainees in Ethiopia and worldwide.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-2 pt-2">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Active Membership & Subscription Dashboard</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Customizable Profile (Height, Weight, Age, Gender)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-orange"></i> Workout Routines & Daily Meal Logging</li>
+            </ul>
+          </div>
         </div>
-    </section>
 
-    <!-- ========================================== -->
-    <!-- COACHING PROGRAMS SECTION                  -->
-    <!-- ========================================== -->
-    <section id="programs" class="py-20 bg-darkbg border-t border-cardborder">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <span class="text-brand-500 text-xs font-bold uppercase tracking-widest">Coaching Programs</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white">Choose Your Fitness Path</h2>
-                <p class="text-muted text-base">
-                    Whether you want to build maximum natural muscle, shred body fat while preserving lean mass, or get 1-on-1 coaching in Addis Ababa.
-                </p>
+        <div class="lg:col-span-6 flex justify-center gap-4 overflow-x-auto py-4">
+          <div class="w-48 sm:w-56 bg-black border-4 border-slate-800 rounded-[28px] p-3 shrink-0 shadow-2xl">
+            <div class="bg-dark-bg rounded-2xl p-3 text-left space-y-3 border border-slate-800">
+              <div class="flex justify-between items-center text-[10px] text-slate-400">
+                <span>Woyyu Dashboard</span>
+                <i class="fa-solid fa-fire text-brand-orange"></i>
+              </div>
+              <div class="bg-brand-orange p-2.5 rounded-xl text-white">
+                <p class="text-[9px] uppercase font-bold">Active Program</p>
+                <p class="text-xs font-extrabold">Hypertrophy Chest & Arms</p>
+              </div>
+              <div class="bg-dark-card p-2 rounded-lg text-[10px] text-slate-300 space-y-1">
+                <p>Protein: <span class="text-white font-bold">140g / 160g</span></p>
+                <p>Calories: <span class="text-white font-bold">2,100 kcal</span></p>
+              </div>
             </div>
+          </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Program 1: Hypertrophy & Muscle Build -->
-                <div class="bg-cardbg border border-cardborder rounded-3xl overflow-hidden shadow-xl hover:border-brand-500 transition-all group flex flex-col justify-between">
-                    <div>
-                        <!-- Cover Photo Placeholder -->
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80" 
-                                 alt="Hypertrophy Program" 
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/131924/FF5722?text=HYPERTROPHY+PROGRAM';">
-                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent opacity-90"></div>
-                            <span class="absolute top-4 left-4 bg-brand-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
-                                Most Popular
-                            </span>
-                        </div>
-
-                        <div class="p-6 space-y-4">
-                            <h3 class="text-2xl font-extrabold text-white">Natural Hypertrophy</h3>
-                            <p class="text-xs text-slate-300 leading-relaxed">
-                                Built for lifters aiming to pack on solid muscle mass without dangerous PEDs or unrealistic extreme diets.
-                            </p>
-
-                            <ul class="space-y-2.5 text-xs text-slate-300 pt-2">
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-check text-brand-500"></i>
-                                    <span>12-Week Progressive Overload Split</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-check text-brand-500"></i>
-                                    <span>Ethiopian High-Protein Meal Plan</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-check text-brand-500"></i>
-                                    <span>Form Analysis & Lifting Corrections</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-check text-brand-500"></i>
-                                    <span>Woyyu App Access Included</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="p-6 pt-0 border-t border-cardborder/50 mt-4">
-                        <div class="flex items-baseline justify-between mb-4 pt-4">
-                            <span class="text-xs text-muted">Duration: 12 Weeks</span>
-                            <span class="text-xl font-black text-brand-500">Custom Rate</span>
-                        </div>
-                        <a href="https://t.me/coachroba" target="_blank" 
-                           class="w-full py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-xs text-center block transition-all">
-                            Enroll via Telegram
-                        </a>
-                    </div>
+          <div class="w-48 sm:w-56 bg-black border-4 border-slate-800 rounded-[28px] p-3 shrink-0 shadow-2xl">
+            <div class="bg-dark-bg rounded-2xl p-3 text-left space-y-3 border border-slate-800">
+              <div class="flex items-center gap-2">
+                <div class="w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange text-xs font-bold flex items-center justify-center">Y</div>
+                <div>
+                  <p class="text-[10px] font-bold text-white">Trainee Profile</p>
+                  <p class="text-[8px] text-slate-400">0923294028</p>
                 </div>
-
-                <!-- Program 2: Fat Shred & Recomposition -->
-                <div class="bg-cardbg border border-cardborder rounded-3xl overflow-hidden shadow-xl hover:border-brand-500 transition-all group flex flex-col justify-between">
-                    <div>
-                        <!-- Cover Photo Placeholder -->
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" 
-                                 alt="Fat Shred Program" 
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/131924/FF5722?text=FAT+SHRED+PROGRAM';">
-                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent opacity-90"></div>
-                            <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
-                                Fat Loss Focus
-                            </span>
-                        </div>
-
-                        <div class="p-6 space-y-4">
-                            <h3 class="text-2xl font-extrabold text-white">Fat Shred & Recomp</h3>
-                            <p class="text-xs text-slate-300 leading-relaxed">
-                                Drop body fat percentage while keeping every gram of hard-earned muscle through calculated deficit nutrition.
-                            </p>
-
-                            <ul class="space-y-2.5 text-xs text-slate-300 pt-2">
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-check text-brand-500"></i>
-                                    <span>Calculated Calorie & Macro Deficit</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-check text-brand-500"></i>
-                                    <span>Targeted Cardio & Step Protocols</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-check text-brand-500"></i>
-                                    <span>Weekly Physique Check-ins</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-check text-brand-500"></i>
-                                    <span>Habit & Metabolic Tracking</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="p-6 pt-0 border-t border-cardborder/50 mt-4">
-                        <div class="flex items-baseline justify-between mb-4 pt-4">
-                            <span class="text-xs text-muted">Duration: 8-16 Weeks</span>
-                            <span class="text-xl font-black text-brand-500">Custom Rate</span>
-                        </div>
-                        <a href="https://t.me/coachroba" target="_blank" 
-                           class="w-full py-3 rounded-xl bg-cardborder hover:bg-brand-500 text-white font-bold text-xs text-center block transition-all">
-                            Enroll via Telegram
-                        </a>
-                    </div>
+              </div>
+              <div class="bg-emerald-950/80 border border-emerald-500/30 text-emerald-400 p-2 rounded-lg text-[9px] font-medium flex items-center gap-1.5">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Membership Active</span>
+              </div>
+              <div class="space-y-1.5 text-[9px]">
+                <div class="bg-dark-card p-2 rounded text-slate-300 flex justify-between">
+                  <span>Profile Settings</span>
+                  <i class="fa-solid fa-chevron-right text-slate-500"></i>
                 </div>
-
-                <!-- Program 3: 1-on-1 In-Person Gym Coaching -->
-                <div class="bg-cardbg border border-cardborder rounded-3xl overflow-hidden shadow-xl hover:border-brand-500 transition-all group flex flex-col justify-between">
-                    <div>
-                        <!-- Cover Photo Placeholder -->
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" 
-                                 alt="1-on-1 Gym Coaching" 
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/131924/FF5722?text=1-ON-1+COACHING';">
-                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent opacity-90"></div>
-                            <span class="absolute top-4 left-4 bg-amber-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
-                                VIP Addis Ababa
-                            </span>
-                        </div>
-
-                        <div class="p-6 space-y-4">
-                            <h3 class="text-2xl font-extrabold text-white">1-on-1 Gym VIP</h3>
-                            <p class="text-xs text-slate-300 leading-relaxed">
-                                Direct in-person coaching with Coach Roba inside Addis Ababa's top gym facilities with immediate form spot checks.
-                            </p>
-
-                            <ul class="space-y-2.5 text-xs text-slate-300 pt-2">
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-check text-brand-500"></i>
-                                    <span>In-Person Gym Floor Training</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-check text-brand-500"></i>
-                                    <span>Personalized Technique Mastery</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-check text-brand-500"></i>
-                                    <span>Direct Telegram Priority Access</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-check text-brand-500"></i>
-                                    <span>Strict Accountability & Monitoring</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="p-6 pt-0 border-t border-cardborder/50 mt-4">
-                        <div class="flex items-baseline justify-between mb-4 pt-4">
-                            <span class="text-xs text-muted">Limited Spots</span>
-                            <span class="text-xl font-black text-brand-500">VIP Spot</span>
-                        </div>
-                        <a href="tel:+251911000000" 
-                           class="w-full py-3 rounded-xl bg-cardborder hover:bg-brand-500 text-white font-bold text-xs text-center block transition-all">
-                            Call Coach Roba Direct
-                        </a>
-                    </div>
+                <div class="bg-dark-card p-2 rounded text-slate-300 flex justify-between">
+                  <span>Contact Coach Roba</span>
+                  <i class="fa-solid fa-chevron-right text-slate-500"></i>
                 </div>
-
+              </div>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- ========================================== -->
-    <!-- ADDIS ABABA GYM LOCATIONS SECTION          -->
-    <!-- ========================================== -->
-    <section id="locations" class="py-20 bg-cardbg/40 border-t border-cardborder">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <span class="text-brand-500 text-xs font-bold uppercase tracking-widest">Gym Locations</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white">Train With Roba in Addis Ababa</h2>
-                <p class="text-muted text-base">
-                    Multiple premier partner gym hubs across central Addis Ababa for in-person natural coaching sessions.
-                </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="py-20 bg-dark-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">Coaching Programs</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold uppercase text-white mt-2">Tailored To Your Goals</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Program 1 -->
+        <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden hover:border-brand-orange/50 transition-all group flex flex-col justify-between">
+          <div>
+            <div class="h-44 bg-slate-900 border-b border-dark-border relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" 
+                alt="Hypertrophy Program Photo" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                onerror="this.src='https://placehold.co/600x400/131924/FF5722?text=Hypertrophy+Program'"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent"></div>
+              <span class="absolute bottom-2 left-3 text-xs font-bold text-white uppercase bg-black/60 px-2 py-0.5 rounded border border-white/10">Hypertrophy</span>
             </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                
-                <!-- Gym Branches Cards -->
-                <div class="lg:col-span-5 space-y-4">
-                    
-                    <!-- Branch 1 -->
-                    <div class="p-5 rounded-2xl bg-cardbg border border-cardborder hover:border-brand-500 transition-all space-y-2">
-                        <div class="flex items-center justify-between">
-                            <h4 class="font-bold text-white text-base">Bole Medhanialem Branch</h4>
-                            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-500/20 text-brand-500">Main Hub</span>
-                        </div>
-                        <p class="text-xs text-muted">Near Edna Mall & Atlas Area, Bole, Addis Ababa</p>
-                        <div class="flex items-center gap-4 text-xs text-slate-300 pt-1">
-                            <span><i class="fa-regular fa-clock text-brand-500 mr-1"></i> 6:00 AM - 9:00 PM</span>
-                            <span><i class="fa-solid fa-dumbbell text-brand-500 mr-1"></i> Heavy Free Weights</span>
-                        </div>
-                    </div>
-
-                    <!-- Branch 2 -->
-                    <div class="p-5 rounded-2xl bg-cardbg border border-cardborder hover:border-brand-500 transition-all space-y-2">
-                        <div class="flex items-center justify-between">
-                            <h4 class="font-bold text-white text-base">Kazanchis Fitness Center</h4>
-                            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-300">Partner Gym</span>
-                        </div>
-                        <p class="text-xs text-muted">Kazanchis Business District, Addis Ababa</p>
-                        <div class="flex items-center gap-4 text-xs text-slate-300 pt-1">
-                            <span><i class="fa-regular fa-clock text-brand-500 mr-1"></i> 6:30 AM - 8:30 PM</span>
-                            <span><i class="fa-solid fa-heart-pulse text-brand-500 mr-1"></i> Cardio & Power Rack</span>
-                        </div>
-                    </div>
-
-                    <!-- Branch 3 -->
-                    <div class="p-5 rounded-2xl bg-cardbg border border-cardborder hover:border-brand-500 transition-all space-y-2">
-                        <div class="flex items-center justify-between">
-                            <h4 class="font-bold text-white text-base">Old Airport / Sarbet Facility</h4>
-                            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-300">VIP Studio</span>
-                        </div>
-                        <p class="text-xs text-muted">Sarbet, near African Union, Addis Ababa</p>
-                        <div class="flex items-center gap-4 text-xs text-slate-300 pt-1">
-                            <span><i class="fa-regular fa-clock text-brand-500 mr-1"></i> By Appointment</span>
-                            <span><i class="fa-solid fa-user-shield text-brand-500 mr-1"></i> Private Sessions</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Google Maps Frame Right -->
-                <div class="lg:col-span-7 h-[400px] rounded-3xl overflow-hidden border border-cardborder shadow-2xl relative">
-                    <iframe 
-                        title="Woyyu Fitness Addis Ababa Locations Map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126105.71182283732!2d38.70321288220038!3d8.980603417726352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
-                        class="w-full h-full border-0 filter grayscale invert contrast-125 opacity-80 hover:opacity-100 transition-opacity" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                    <div class="absolute bottom-4 left-4 bg-darkbg/90 backdrop-blur-md px-4 py-2 rounded-xl border border-cardborder text-xs text-white">
-                        <i class="fa-solid fa-location-dot text-brand-500 mr-1"></i> Addis Ababa, Ethiopia
-                    </div>
-                </div>
-
+            <div class="p-6 space-y-4">
+              <h3 class="text-xl font-bold text-white">Hypertrophy & Muscle Gain</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">Designed for natural lifters aiming to pack on lean muscle mass through progressive overload principles.</p>
+              <ul class="text-xs text-slate-400 space-y-2 border-t border-dark-border pt-4">
+                <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Targeted Split Routines</li>
+                <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Local Meal Plans (Injera, Eggs, Meat)</li>
+              </ul>
             </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="block text-center w-full bg-dark-bg hover:bg-brand-orange text-white text-xs font-bold uppercase py-3 rounded-xl border border-dark-border transition-colors">Select Program</a>
+          </div>
         </div>
-    </section>
 
-    <!-- ========================================== -->
-    <!-- CLIENT TRANSFORMATIONS / TESTIMONIALS     -->
-    <!-- ========================================== -->
-    <section id="transformations" class="py-20 bg-darkbg border-t border-cardborder">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <span class="text-brand-500 text-xs font-bold uppercase tracking-widest">Proven Results</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white">Real Clients, Natural Transformations</h2>
-                <p class="text-muted text-base">
-                    Every result achieved through consistent hypertrophy weight training, Ethiopian macro balancing, and zero banned substances.
-                </p>
+        <!-- Program 2 -->
+        <div class="bg-dark-card rounded-2xl border-2 border-brand-orange overflow-hidden relative group flex flex-col justify-between">
+          <span class="absolute top-3 right-3 z-10 bg-brand-orange text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-md">Most Popular</span>
+          <div>
+            <div class="h-44 bg-slate-900 border-b border-dark-border relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" 
+                alt="Fat Loss Program Photo" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                onerror="this.src='https://placehold.co/600x400/131924/FF5722?text=Fat+Loss+Program'"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent"></div>
+              <span class="absolute bottom-2 left-3 text-xs font-bold text-white uppercase bg-black/60 px-2 py-0.5 rounded border border-white/10">Fat Loss</span>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Transformation Card 1 -->
-                <div class="bg-cardbg border border-cardborder rounded-3xl p-5 space-y-4 hover:border-brand-500 transition-all">
-                    <!-- Before/After Image Frame -->
-                    <div class="grid grid-cols-2 gap-2 h-64 rounded-2xl overflow-hidden bg-slate-900 border border-cardborder relative">
-                        <div class="relative h-full">
-                            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=400&q=80" 
-                                 alt="Before Client 1" 
-                                 class="w-full h-full object-cover grayscale"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/400x600/131924/94A3B8?text=BEFORE';">
-                            <span class="absolute bottom-2 left-2 bg-black/70 px-2 py-0.5 rounded text-[10px] font-bold text-slate-300">BEFORE</span>
-                        </div>
-                        <div class="relative h-full">
-                            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=400&q=80" 
-                                 alt="After Client 1" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/400x600/131924/FF5722?text=AFTER';">
-                            <span class="absolute bottom-2 right-2 bg-brand-500 px-2 py-0.5 rounded text-[10px] font-bold text-white">AFTER</span>
-                        </div>
-                    </div>
-
-                    <div class="space-y-2">
-                        <div class="flex justify-between items-center">
-                            <h4 class="font-extrabold text-white text-lg">Yonas T.</h4>
-                            <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2.5 py-1 rounded-full">-14kg Fat Shred</span>
-                        </div>
-                        <p class="text-xs text-muted leading-relaxed">
-                            "Coach Roba structured my meals using everyday Ethiopian food. I lost 14 kg of body fat in 16 weeks without feeling starved."
-                        </p>
-                        <div class="text-[11px] text-slate-400 font-medium">Program: Fat Shred & Recomp • 16 Weeks</div>
-                    </div>
-                </div>
-
-                <!-- Transformation Card 2 -->
-                <div class="bg-cardbg border border-cardborder rounded-3xl p-5 space-y-4 hover:border-brand-500 transition-all">
-                    <div class="grid grid-cols-2 gap-2 h-64 rounded-2xl overflow-hidden bg-slate-900 border border-cardborder relative">
-                        <div class="relative h-full">
-                            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=400&q=80" 
-                                 alt="Before Client 2" 
-                                 class="w-full h-full object-cover grayscale"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/400x600/131924/94A3B8?text=BEFORE';">
-                            <span class="absolute bottom-2 left-2 bg-black/70 px-2 py-0.5 rounded text-[10px] font-bold text-slate-300">BEFORE</span>
-                        </div>
-                        <div class="relative h-full">
-                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80" 
-                                 alt="After Client 2" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/400x600/131924/FF5722?text=AFTER';">
-                            <span class="absolute bottom-2 right-2 bg-brand-500 px-2 py-0.5 rounded text-[10px] font-bold text-white">AFTER</span>
-                        </div>
-                    </div>
-
-                    <div class="space-y-2">
-                        <div class="flex justify-between items-center">
-                            <h4 class="font-extrabold text-white text-lg">Dawit M.</h4>
-                            <span class="text-xs font-bold text-amber-400 bg-amber-400/10 px-2.5 py-1 rounded-full">+6.5kg Muscle Gain</span>
-                        </div>
-                        <p class="text-xs text-muted leading-relaxed">
-                            "I was a skinny hardgainer for years. Roba fixed my bench form and progressive overload. Saw huge gains naturally."
-                        </p>
-                        <div class="text-[11px] text-slate-400 font-medium">Program: Natural Hypertrophy • 20 Weeks</div>
-                    </div>
-                </div>
-
-                <!-- Transformation Card 3 -->
-                <div class="bg-cardbg border border-cardborder rounded-3xl p-5 space-y-4 hover:border-brand-500 transition-all">
-                    <div class="grid grid-cols-2 gap-2 h-64 rounded-2xl overflow-hidden bg-slate-900 border border-cardborder relative">
-                        <div class="relative h-full">
-                            <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=400&q=80" 
-                                 alt="Before Client 3" 
-                                 class="w-full h-full object-cover grayscale"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/400x600/131924/94A3B8?text=BEFORE';">
-                            <span class="absolute bottom-2 left-2 bg-black/70 px-2 py-0.5 rounded text-[10px] font-bold text-slate-300">BEFORE</span>
-                        </div>
-                        <div class="relative h-full">
-                            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=400&q=80" 
-                                 alt="After Client 3" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.onerror=null; this.src='https://placehold.co/400x600/131924/FF5722?text=AFTER';">
-                            <span class="absolute bottom-2 right-2 bg-brand-500 px-2 py-0.5 rounded text-[10px] font-bold text-white">AFTER</span>
-                        </div>
-                    </div>
-
-                    <div class="space-y-2">
-                        <div class="flex justify-between items-center">
-                            <h4 class="font-extrabold text-white text-lg">Amanuel K.</h4>
-                            <span class="text-xs font-bold text-emerald-400 bg-emerald-400/10 px-2.5 py-1 rounded-full">Recomposition</span>
-                        </div>
-                        <p class="text-xs text-muted leading-relaxed">
-                            "1-on-1 sessions at Bole Medhanialem branch completely transformed my posture and strength. Worth every single Birr."
-                        </p>
-                        <div class="text-[11px] text-slate-400 font-medium">Program: 1-on-1 VIP Gym • 12 Weeks</div>
-                    </div>
-                </div>
-
+            <div class="p-6 space-y-4">
+              <h3 class="text-xl font-bold text-white">Fat Shred & Physique Recomp</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">Burn belly fat while preserving hard-earned muscle with custom calorie deficits and cardio strategy.</p>
+              <ul class="text-xs text-slate-400 space-y-2 border-t border-dark-border pt-4">
+                <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Daily Calorie Tracking</li>
+                <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Woyyu App Progress Monitoring</li>
+              </ul>
             </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="block text-center w-full bg-brand-orange hover:bg-brand-orange-dark text-white text-xs font-bold uppercase py-3 rounded-xl transition-colors shadow-lg shadow-brand-orange/20">Select Program</a>
+          </div>
         </div>
-    </section>
 
-    <!-- ========================================== -->
-    <!-- DAILY CALORIE CALCULATOR TOOL              -->
-    <!-- ========================================== -->
-    <section id="calculator" class="py-20 bg-cardbg/40 border-t border-cardborder">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <span class="text-brand-500 text-xs font-bold uppercase tracking-widest">Free Fitness Tool</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white">Daily Calorie & Macro Calculator</h2>
-                <p class="text-muted text-base">
-                    Calculate your exact total daily energy expenditure (TDEE) and optimal protein targets tailored for your personal physique goal.
-                </p>
+        <!-- Program 3 -->
+        <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden hover:border-brand-orange/50 transition-all group flex flex-col justify-between">
+          <div>
+            <div class="h-44 bg-slate-900 border-b border-dark-border relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" 
+                alt="Personal Coaching Photo" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                onerror="this.src='https://placehold.co/600x400/131924/FF5722?text=Personal+Gym+Coaching'"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent"></div>
+              <span class="absolute bottom-2 left-3 text-xs font-bold text-white uppercase bg-black/60 px-2 py-0.5 rounded border border-white/10">In-Person Gym</span>
             </div>
-
-            <div class="max-w-4xl mx-auto bg-cardbg border border-cardborder rounded-3xl p-6 sm:p-10 shadow-2xl">
-                <form id="calorie-form" onsubmit="calculateCalories(event)" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    
-                    <!-- Gender -->
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-slate-300 mb-2">Gender</label>
-                        <div class="grid grid-cols-2 gap-3">
-                            <label class="cursor-pointer">
-                                <input type="radio" name="gender" value="male" checked class="peer sr-only">
-                                <div class="p-3 rounded-xl border border-cardborder bg-slate-900 text-center peer-checked:border-brand-500 peer-checked:bg-brand-500/10 peer-checked:text-brand-500 text-xs font-bold transition-all">
-                                    Male
-                                </div>
-                            </label>
-                            <label class="cursor-pointer">
-                                <input type="radio" name="gender" value="female" class="peer sr-only">
-                                <div class="p-3 rounded-xl border border-cardborder bg-slate-900 text-center peer-checked:border-brand-500 peer-checked:bg-brand-500/10 peer-checked:text-brand-500 text-xs font-bold transition-all">
-                                    Female
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Age -->
-                    <div>
-                        <label for="calc-age" class="block text-xs font-bold uppercase text-slate-300 mb-2">Age (years)</label>
-                        <input type="number" id="calc-age" min="15" max="80" value="25" required
-                               class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-cardborder text-white text-sm focus:outline-none focus:border-brand-500">
-                    </div>
-
-                    <!-- Weight -->
-                    <div>
-                        <label for="calc-weight" class="block text-xs font-bold uppercase text-slate-300 mb-2">Weight (kg)</label>
-                        <input type="number" id="calc-weight" min="30" max="200" value="75" step="0.5" required
-                               class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-cardborder text-white text-sm focus:outline-none focus:border-brand-500">
-                    </div>
-
-                    <!-- Height -->
-                    <div>
-                        <label for="calc-height" class="block text-xs font-bold uppercase text-slate-300 mb-2">Height (cm)</label>
-                        <input type="number" id="calc-height" min="120" max="220" value="178" required
-                               class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-cardborder text-white text-sm focus:outline-none focus:border-brand-500">
-                    </div>
-
-                    <!-- Activity Level -->
-                    <div class="md:col-span-2">
-                        <label for="calc-activity" class="block text-xs font-bold uppercase text-slate-300 mb-2">Weekly Activity Level</label>
-                        <select id="calc-activity" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-cardborder text-white text-sm focus:outline-none focus:border-brand-500">
-                            <value="1.2">Sedentary (Desk job, little exercise)</option>
-                            <option value="1.375">Light Activity (Gym 1-3 days/week)</option>
-                            <option value="1.55" selected>Moderate Activity (Gym 4-5 days/week)</option>
-                            <option value="1.725">Heavy Activity (Hard gym 6-7 days/week)</option>
-                        </select>
-                    </div>
-
-                    <!-- Fitness Goal -->
-                    <div class="md:col-span-2">
-                        <label for="calc-goal" class="block text-xs font-bold uppercase text-slate-300 mb-2">Primary Goal</label>
-                        <select id="calc-goal" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-cardborder text-white text-sm focus:outline-none focus:border-brand-500">
-                            <option value="lose">Fat Loss & Shred (-500 kcal deficit)</option>
-                            <option value="maintain">Maintain Current Weight & Recomp</option>
-                            <option value="gain" selected>Lean Muscle Hypertrophy (+300 kcal surplus)</option>
-                        </select>
-                    </div>
-
-                    <div class="md:col-span-2">
-                        <button type="submit" 
-                                class="w-full py-4 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-extrabold text-base transition-all shadow-lg orange-glow">
-                            Calculate My Daily Targets
-                        </button>
-                    </div>
-                </form>
-
-                <!-- Calculation Results Output Card -->
-                <div id="calc-result" class="hidden mt-8 pt-8 border-t border-cardborder space-y-6">
-                    <div class="text-center">
-                        <div class="text-xs text-muted uppercase tracking-widest font-bold">Estimated Daily Intake</div>
-                        <div id="result-calories" class="text-4xl sm:text-5xl font-black text-brand-500 mt-1">2,650 kcal</div>
-                        <div id="result-summary" class="text-xs text-slate-300 mt-2">Target for Lean Muscle Gain</div>
-                    </div>
-
-                    <!-- Macro Breakdown Grid -->
-                    <div class="grid grid-cols-3 gap-4 text-center">
-                        <div class="p-4 rounded-2xl bg-slate-900 border border-cardborder">
-                            <div class="text-xs text-brand-500 font-bold uppercase">Protein</div>
-                            <div id="result-protein" class="text-xl font-extrabold text-white mt-1">165g</div>
-                            <div class="text-[10px] text-muted">Building Blocks</div>
-                        </div>
-
-                        <div class="p-4 rounded-2xl bg-slate-900 border border-cardborder">
-                            <div class="text-xs text-amber-400 font-bold uppercase">Carbs</div>
-                            <div id="result-carbs" class="text-xl font-extrabold text-white mt-1">320g</div>
-                            <div class="text-[10px] text-muted">Training Energy</div>
-                        </div>
-
-                        <div class="p-4 rounded-2xl bg-slate-900 border border-cardborder">
-                            <div class="text-xs text-emerald-400 font-bold uppercase">Fats</div>
-                            <div id="result-fats" class="text-xl font-extrabold text-white mt-1">70g</div>
-                            <div class="text-[10px] text-muted">Hormonal Health</div>
-                        </div>
-                    </div>
-
-                    <div class="p-4 rounded-xl bg-brand-500/10 border border-brand-500/30 text-xs text-slate-300 flex items-center justify-between">
-                        <span><i class="fa-solid fa-lightbulb text-brand-500 mr-2"></i> Easily track these numbers inside the Woyyu App!</span>
-                        <a href="https://t.me/coachroba" target="_blank" class="font-bold text-brand-500 underline">Get Meal Plan</a>
-                    </div>
-                </div>
-
+            <div class="p-6 space-y-4">
+              <h3 class="text-xl font-bold text-white">1-on-1 Personal Gym Coaching</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">Direct in-person training with Coach Roba at top-tier fitness centers in Addis Ababa.</p>
+              <ul class="text-xs text-slate-400 space-y-2 border-t border-dark-border pt-4">
+                <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> Hands-on Form Correction</li>
+                <li><i class="fa-solid fa-check text-brand-orange mr-2"></i> High Intensity Spotting</li>
+              </ul>
             </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="block text-center w-full bg-dark-bg hover:bg-brand-orange text-white text-xs font-bold uppercase py-3 rounded-xl border border-dark-border transition-colors">Select Program</a>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- ========================================== -->
-    <!-- FAQ ACCORDION SECTION                      -->
-    <!-- ========================================== -->
-    <section id="faq" class="py-20 bg-darkbg border-t border-cardborder">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center space-y-4 mb-16">
-                <span class="text-brand-500 text-xs font-bold uppercase tracking-widest">Questions & Answers</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white">Frequently Asked Questions</h2>
-                <p class="text-muted text-base">
-                    Everything you need to know about Coach Roba's programs, natural philosophy, and Woyyu Fitness.
-                </p>
-            </div>
+  <!-- Locations Section -->
+  <section id="locations" class="py-20 bg-dark-card border-t border-b border-dark-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">Local SEO & Map</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold uppercase text-white mt-2">Addis Ababa Gym Locations</p>
+      </div>
 
-            <div class="space-y-4">
-                
-                <!-- FAQ Item 1 -->
-                <div class="bg-cardbg border border-cardborder rounded-2xl overflow-hidden">
-                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between font-bold text-white text-sm sm:text-base focus:outline-none">
-                        <span>Is Coach Roba really 100% natural?</span>
-                        <i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-cardborder/40 pt-3">
-                        Yes, 100%. Coach Roba strictly advocates for natural bodybuilding through heavy compound lifting, progressive overload, proper sleep recovery, and standardized local Ethiopian nutrition.
-                    </div>
-                </div>
-
-                <!-- FAQ Item 2 -->
-                <div class="bg-cardbg border border-cardborder rounded-2xl overflow-hidden">
-                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between font-bold text-white text-sm sm:text-base focus:outline-none">
-                        <span>Can I do online coaching if I live outside Addis Ababa?</span>
-                        <i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-cardborder/40 pt-3">
-                        Absolutely! We have hundreds of online clients across Ethiopia and the diaspora (US, Europe, Middle East). All workout routines, video form checks, and nutritional tracking are delivered seamlessly via Telegram and the Woyyu Fitness App.
-                    </div>
-                </div>
-
-                <!-- FAQ Item 3 -->
-                <div class="bg-cardbg border border-cardborder rounded-2xl overflow-hidden">
-                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between font-bold text-white text-sm sm:text-base focus:outline-none">
-                        <span>How does the Woyyu Fitness App calculate Injera & Ethiopian food?</span>
-                        <i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-cardborder/40 pt-3">
-                        Developed by Horan Technologies, our database includes laboratory-calibrated macros for Teff Injera, Doro Wet, Shiro, Tibs, Chechebsa, and traditional local dishes so you don't have to guess your calorie counts.
-                    </div>
-                </div>
-
-                <!-- FAQ Item 4 -->
-                <div class="bg-cardbg border border-cardborder rounded-2xl overflow-hidden">
-                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between font-bold text-white text-sm sm:text-base focus:outline-none">
-                        <span>Where do 1-on-1 gym coaching sessions take place?</span>
-                        <i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-cardborder/40 pt-3">
-                        In-person sessions take place at our main partner branches in Addis Ababa, including Bole Medhanialem, Kazanchis, and Sarbet facilities.
-                    </div>
-                </div>
-
-            </div>
+      <div class="grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 space-y-4">
+          <div class="bg-dark-bg p-5 rounded-2xl border border-dark-border space-y-1">
+            <i class="fa-solid fa-location-dot text-brand-orange text-xl mb-1"></i>
+            <h4 class="text-base font-bold text-white">Bole Sub-City Fitness Hubs</h4>
+            <p class="text-xs text-slate-400">In-person personal training available at partner gyms in Bole.</p>
+          </div>
+          <div class="bg-dark-bg p-5 rounded-2xl border border-dark-border space-y-1">
+            <i class="fa-solid fa-location-dot text-brand-orange text-xl mb-1"></i>
+            <h4 class="text-base font-bold text-white">Kazanchis & Center Gyms</h4>
+            <p class="text-xs text-slate-400">Early morning & evening peak hour training slots available.</p>
+          </div>
+          <div class="bg-dark-bg p-5 rounded-2xl border border-dark-border space-y-1">
+            <i class="fa-solid fa-phone text-brand-orange text-xl mb-1"></i>
+            <h4 class="text-base font-bold text-white">Direct Booking Contact</h4>
+            <p class="text-xs text-slate-400">Call 0946 364 983 to schedule your session location.</p>
+          </div>
         </div>
-    </section>
 
-    <!-- ========================================== -->
-    <!-- FOOTER                                     -->
-    <!-- ========================================== -->
-    <footer class="bg-slate-950 border-t border-cardborder py-16 text-slate-400">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
-                
-                <!-- Brand Info Column -->
-                <div class="md:col-span-5 space-y-4">
-                    <div class="flex items-center gap-3">
-                        <img src="https://placehold.co/180x50/131924/FF5722?text=WOYYU+FITNESS" 
-                             alt="Woyyu Fitness Logo" 
-                             class="h-10 w-auto rounded object-contain border border-cardborder"
-                             onerror="this.onerror=null; this.src='https://placehold.co/180x50/131924/FF5722?text=WOYYU+FITNESS';">
-                        <span class="font-black text-xl text-white">WOYYU <span class="text-brand-500">FITNESS</span></span>
-                    </div>
-
-                    <p class="text-xs leading-relaxed max-w-sm">
-                        Coach Roba's official fitness platform. Dedicated to natural body transformation, science-driven hypertrophy training, and custom nutrition in Addis Ababa.
-                    </p>
-
-                    <div class="text-xs text-slate-300 space-y-1">
-                        <div><i class="fa-solid fa-phone text-brand-500 mr-2"></i> +251 911 000 000</div>
-                        <div><i class="fa-solid fa-envelope text-brand-500 mr-2"></i> contact@woyyufitness.com</div>
-                        <div><i class="fa-solid fa-location-dot text-brand-500 mr-2"></i> Bole, Addis Ababa, Ethiopia</div>
-                    </div>
-                </div>
-
-                <!-- Navigation Quick Links -->
-                <div class="md:col-span-3 space-y-3">
-                    <h5 class="text-sm font-bold text-white uppercase tracking-wider">Quick Navigation</h5>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#about" class="hover:text-brand-500 transition-colors">About Coach Roba</a></li>
-                        <li><a href="#programs" class="hover:text-brand-500 transition-colors">Coaching Programs</a></li>
-                        <li><a href="#app" class="hover:text-brand-500 transition-colors">Woyyu App (Horan Tech)</a></li>
-                        <li><a href="#transformations" class="hover:text-brand-500 transition-colors">Client Results</a></li>
-                        <li><a href="#calculator" class="hover:text-brand-500 transition-colors">Calorie Calculator</a></li>
-                        <li><a href="#locations" class="hover:text-brand-500 transition-colors">Addis Gym Locations</a></li>
-                    </ul>
-                </div>
-
-                <!-- Socials & App Partner -->
-                <div class="md:col-span-4 space-y-4">
-                    <h5 class="text-sm font-bold text-white uppercase tracking-wider">Connect & Socials</h5>
-                    
-                    <div class="flex items-center gap-3">
-                        <a href="https://t.me/coachroba" target="_blank" aria-label="Telegram" class="w-10 h-10 rounded-xl bg-cardbg border border-cardborder hover:border-brand-500 text-slate-300 hover:text-brand-500 flex items-center justify-center transition-all">
-                            <i class="fa-brands fa-telegram text-lg"></i>
-                        </a>
-                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok" class="w-10 h-10 rounded-xl bg-cardbg border border-cardborder hover:border-brand-500 text-slate-300 hover:text-brand-500 flex items-center justify-center transition-all">
-                            <i class="fa-brands fa-tiktok text-lg"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="w-10 h-10 rounded-xl bg-cardbg border border-cardborder hover:border-brand-500 text-slate-300 hover:text-brand-500 flex items-center justify-center transition-all">
-                            <i class="fa-brands fa-instagram text-lg"></i>
-                        </a>
-                        <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="w-10 h-10 rounded-xl bg-cardbg border border-cardborder hover:border-brand-500 text-slate-300 hover:text-brand-500 flex items-center justify-center transition-all">
-                            <i class="fa-brands fa-youtube text-lg"></i>
-                        </a>
-                    </div>
-
-                    <div class="pt-2">
-                        <div class="text-[11px] text-muted">Powered & Developed By</div>
-                        <div class="text-xs font-bold text-white flex items-center gap-1.5 mt-1">
-                            <i class="fa-solid fa-code text-brand-500"></i> Horan Technologies
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="mt-12 pt-8 border-t border-cardborder/60 text-center text-[11px] text-slate-300">
-                &copy; <span id="year">2026</span> Coach Roba - Woyyu Fitness. All Rights Reserved. Built with Horan Technologies.
-            </div>
+        <div class="lg:col-span-7 bg-dark-bg rounded-3xl p-3 border border-dark-border shadow-2xl">
+          <div class="w-full h-80 sm:h-96 rounded-2xl overflow-hidden relative">
+            <iframe 
+              title="Addis Ababa Gym Locations Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126107.01423403168!2d38.704265000000004!3d9.0107934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2set!4v1710000000000!5m2!1sen!2set" 
+              class="w-full h-full border-0 grayscale invert opacity-80" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <!-- ========================================== -->
-    <!-- JAVASCRIPT LOGIC                           -->
-    <!-- ========================================== -->
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-dark-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">Client Transformations</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold uppercase text-white mt-2">Before & After Results</p>
+      </div>
 
-        /**
-         * Enhanced Mobile Menu Auto-Close Logic
-         * Resolves event conflicts between pointerdown and click, handles outside clicks, 
-         * intentional page scrolling, down-swipe gestures, and link selections cleanly.
-         */
-        function setupAutoClose(element, toggleBtn, onClose) {
-            if (!element || !toggleBtn || typeof onClose !== 'function') return () => {};
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Transformation Card 1 -->
+        <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between p-6 space-y-4">
+          <div class="grid grid-cols-2 gap-2 bg-slate-900 p-2 rounded-xl border border-dark-border">
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-white/5 group">
+              <img 
+                src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=300&q=80" 
+                alt="Client Before Transformation" 
+                class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform"
+                onerror="this.src='https://placehold.co/300x400/131924/ffffff?text=Before'"
+              >
+              <span class="absolute top-1 left-1 bg-neutral-900/90 text-slate-300 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Before</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-slate-300 bg-black/60 px-1 rounded">Day 1</span>
+            </div>
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-brand-orange/30 group">
+              <img 
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=300&q=80" 
+                alt="Client After Transformation" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                onerror="this.src='https://placehold.co/300x400/131924/FF5722?text=After'"
+              >
+              <span class="absolute top-1 left-1 bg-brand-orange text-white text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">After</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-white bg-black/60 px-1 rounded">12 Weeks</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center text-brand-orange text-xs gap-1 mb-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-300 italic leading-relaxed">
+              "Lost 11kg of fat and built visible abdominal muscles while following Roba's local Ethiopian diet strategy!"
+            </p>
+            <p class="text-xs font-bold text-white mt-3 uppercase">— Yared M., Bole</p>
+          </div>
+        </div>
 
-            let touchStartY = 0;
-            let touchStartX = 0;
-            let lastScrollY = window.scrollY;
+        <!-- Transformation Card 2 -->
+        <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between p-6 space-y-4">
+          <div class="grid grid-cols-2 gap-2 bg-slate-900 p-2 rounded-xl border border-dark-border">
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-white/5 group">
+              <img 
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=300&q=80" 
+                alt="Client Before Transformation" 
+                class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform"
+                onerror="this.src='https://placehold.co/300x400/131924/ffffff?text=Before'"
+              >
+              <span class="absolute top-1 left-1 bg-neutral-900/90 text-slate-300 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Before</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-slate-300 bg-black/60 px-1 rounded">Day 1</span>
+            </div>
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-brand-orange/30 group">
+              <img 
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=300&q=80" 
+                alt="Client After Transformation" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                onerror="this.src='https://placehold.co/300x400/131924/FF5722?text=After'"
+              >
+              <span class="absolute top-1 left-1 bg-brand-orange text-white text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">After</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-white bg-black/60 px-1 rounded">16 Weeks</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center text-brand-orange text-xs gap-1 mb-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-300 italic leading-relaxed">
+              "The hypertrophy workout program logging on the Woyyu app made tracking my strength progression completely seamless."
+            </p>
+            <p class="text-xs font-bold text-white mt-3 uppercase">— Samuel T., Kazanchis</p>
+          </div>
+        </div>
 
-            // 1. Click Outside Handler
-            const handleClickOutside = (event) => {
-                // If target is inside menu or inside toggle button, don't close
-                if (element.contains(event.target) || toggleBtn.contains(event.target)) {
-                    return;
-                }
-                onClose();
-            };
+        <!-- Transformation Card 3 -->
+        <div class="bg-dark-card rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between p-6 space-y-4">
+          <div class="grid grid-cols-2 gap-2 bg-slate-900 p-2 rounded-xl border border-dark-border">
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-white/5 group">
+              <img 
+                src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=300&q=80" 
+                alt="Client Before Transformation" 
+                class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform"
+                onerror="this.src='https://placehold.co/300x400/131924/ffffff?text=Before'"
+              >
+              <span class="absolute top-1 left-1 bg-neutral-900/90 text-slate-300 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">Before</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-slate-300 bg-black/60 px-1 rounded">Day 1</span>
+            </div>
+            <div class="aspect-[3/4] bg-dark-bg rounded-lg overflow-hidden relative border border-brand-orange/30 group">
+              <img 
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=300&q=80" 
+                alt="Client After Transformation" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                onerror="this.src='https://placehold.co/300x400/131924/FF5722?text=After'"
+              >
+              <span class="absolute top-1 left-1 bg-brand-orange text-white text-[8px] font-bold px-1.5 py-0.5 rounded uppercase">After</span>
+              <span class="absolute bottom-1 left-1 text-[9px] text-white bg-black/60 px-1 rounded">20 Weeks</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center text-brand-orange text-xs gap-1 mb-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-slate-300 italic leading-relaxed">
+              "Best natural trainer in Addis. Personal gym sessions fixed my bench press and squat form completely."
+            </p>
+            <p class="text-xs font-bold text-white mt-3 uppercase">— Dawit K., Sarbet</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            // 2. Intentional Page Scroll Handler (Ignores scrolling inside menu)
-            const handleScroll = (event) => {
-                // Ignore if scrolling happened inside the mobile menu element itself
-                if (element.contains(event.target)) return;
-                
-                const currentScrollY = window.scrollY;
-                // Only trigger close if page scrolled more than 30px
-                if (Math.abs(currentScrollY - lastScrollY) > 30) {
-                    onClose();
-                }
-                lastScrollY = currentScrollY;
-            };
+  <!-- Calorie & Macro Calculator Section -->
+  <section id="calculator" class="py-20 bg-dark-card border-t border-b border-dark-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">Interactive Nutrition Tool</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold uppercase text-white mt-2">Calorie & Macro Calculator</p>
+        <p class="text-xs sm:text-sm text-slate-300 mt-2">Calculate your daily maintenance calories and recommended macros based on your body composition and goal.</p>
+      </div>
 
-            // 3. Touch Drag (Swipe Down / Out) Handler
-            const handleTouchStart = (event) => {
-                touchStartY = event.touches[0].clientY;
-                touchStartX = event.touches[0].clientX;
-            };
+      <div class="max-w-4xl mx-auto bg-dark-bg p-6 sm:p-10 rounded-3xl border border-dark-border shadow-2xl">
+        <form id="macro-form" class="grid sm:grid-cols-2 gap-6">
+          
+          <!-- Gender -->
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Gender</label>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="cursor-pointer">
+                <input type="radio" name="gender" value="male" checked class="peer hidden">
+                <div class="p-3 text-center rounded-xl bg-dark-card border border-dark-border text-xs font-bold text-slate-400 peer-checked:border-brand-orange peer-checked:text-white peer-checked:bg-brand-orange/10 transition-all">
+                  Male
+                </div>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="gender" value="female" class="peer hidden">
+                <div class="p-3 text-center rounded-xl bg-dark-card border border-dark-border text-xs font-bold text-slate-400 peer-checked:border-brand-orange peer-checked:text-white peer-checked:bg-brand-orange/10 transition-all">
+                  Female
+                </div>
+              </label>
+            </div>
+          </div>
 
-            const handleTouchMove = (event) => {
-                if (element.classList.contains('hidden')) return;
+          <!-- Age -->
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Age (Years)</label>
+            <input type="number" id="calc-age" value="25" min="15" max="80" class="w-full bg-dark-card border border-dark-border rounded-xl p-3 text-sm text-white focus:outline-none focus:border-brand-orange transition-colors">
+          </div>
 
-                const currentY = event.touches[0].clientY;
-                const deltaY = currentY - touchStartY;
+          <!-- Weight -->
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Weight (KG)</label>
+            <input type="number" id="calc-weight" value="75" min="30" max="200" class="w-full bg-dark-card border border-dark-border rounded-xl p-3 text-sm text-white focus:outline-none focus:border-brand-orange transition-colors">
+          </div>
 
-                // Trigger close if dragging downward > 80px while at top of drawer
-                if (deltaY > 80 && element.scrollTop <= 0) {
-                    onClose();
-                }
-            };
+          <!-- Height -->
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Height (CM)</label>
+            <input type="number" id="calc-height" value="178" min="120" max="220" class="w-full bg-dark-card border border-dark-border rounded-xl p-3 text-sm text-white focus:outline-none focus:border-brand-orange transition-colors">
+          </div>
 
-            // 4. Close when tapping any menu link inside drawer
-            const handleLinkClick = (event) => {
-                if (event.target.closest('a')) {
-                    onClose();
-                }
-            };
+          <!-- Activity Level -->
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Activity Level</label>
+            <select id="calc-activity" class="w-full bg-dark-card border border-dark-border rounded-xl p-3 text-sm text-white focus:outline-none focus:border-brand-orange transition-colors">
+              <option value="1.2">Sedentary (Office Job, No exercise)</option>
+              <option value="1.375" selected>Lightly Active (1-3 workout sessions/week)</option>
+              <option value="1.55">Moderately Active (3-5 intense workouts/week)</option>
+              <option value="1.725">Very Active (6-7 intense workouts/week)</option>
+            </select>
+          </div>
 
-            // Register Event Listeners
-            document.addEventListener('click', handleClickOutside);
-            window.addEventListener('scroll', handleScroll, { passive: true });
-            element.addEventListener('touchstart', handleTouchStart, { passive: true });
-            element.addEventListener('touchmove', handleTouchMove, { passive: true });
-            element.addEventListener('click', handleLinkClick);
+          <!-- Fitness Goal -->
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Fitness Goal</label>
+            <select id="calc-goal" class="w-full bg-dark-card border border-dark-border rounded-xl p-3 text-sm text-white focus:outline-none focus:border-brand-orange transition-colors">
+              <option value="lose">Fat Loss & Shred (-20% Deficit)</option>
+              <option value="maintain">Maintain Physique (Recomposition)</option>
+              <option value="gain" selected>Lean Muscle Hypertrophy (+10% Surplus)</option>
+            </select>
+          </div>
 
-            // Return Cleanup Function
-            return function cleanup() {
-                document.removeEventListener('click', handleClickOutside);
-                window.removeEventListener('scroll', handleScroll);
-                element.removeEventListener('touchstart', handleTouchStart);
-                element.removeEventListener('touchmove', handleTouchMove);
-                element.removeEventListener('click', handleLinkClick);
-            };
-        }
+          <div class="sm:col-span-2 pt-2">
+            <button type="button" onclick="calculateMacros()" class="w-full bg-brand-orange hover:bg-brand-orange-dark text-white font-bold text-xs uppercase tracking-wider py-4 rounded-xl transition-all shadow-lg shadow-brand-orange/20">
+              Calculate Calorie Target
+            </button>
+          </div>
+        </form>
 
-        // Initialize Mobile Menu
-        document.addEventListener('DOMContentLoaded', () => {
-            const mobileBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
+        <!-- Calculation Results -->
+        <div id="calc-results" class="mt-8 pt-8 border-t border-dark-border space-y-6">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+            <div class="bg-dark-card p-4 rounded-2xl border border-dark-border">
+              <p class="text-[10px] text-slate-400 font-bold uppercase">Daily Target</p>
+              <p id="res-calories" class="text-2xl font-extrabold text-brand-orange mt-1">2,450</p>
+              <p class="text-[9px] text-slate-500">kcal/day</p>
+            </div>
+            <div class="bg-dark-card p-4 rounded-2xl border border-dark-border">
+              <p class="text-[10px] text-slate-400 font-bold uppercase">Protein Target</p>
+              <p id="res-protein" class="text-2xl font-extrabold text-white mt-1">165g</p>
+              <p class="text-[9px] text-slate-500">high priority</p>
+            </div>
+            <div class="bg-dark-card p-4 rounded-2xl border border-dark-border">
+              <p class="text-[10px] text-slate-400 font-bold uppercase">Carbohydrates</p>
+              <p id="res-carbs" class="text-2xl font-extrabold text-white mt-1">275g</p>
+              <p class="text-[9px] text-slate-500">energy source</p>
+            </div>
+            <div class="bg-dark-card p-4 rounded-2xl border border-dark-border">
+              <p class="text-[10px] text-slate-400 font-bold uppercase">Healthy Fats</p>
+              <p id="res-fats" class="text-2xl font-extrabold text-white mt-1">68g</p>
+              <p class="text-[9px] text-slate-500">hormone support</p>
+            </div>
+          </div>
 
-            function openMenu() {
-                mobileMenu.classList.remove('hidden');
-                menuIcon.classList.remove('fa-bars');
-                menuIcon.classList.add('fa-xmark');
-            }
+          <div class="bg-dark-card p-4 rounded-xl border border-dark-border flex items-center justify-between text-xs text-slate-300">
+            <span>Need a custom local meal plan based on these targets?</span>
+            <a href="https://t.me/woyyu_fitness_bot" target="_blank" class="text-brand-orange font-bold uppercase hover:underline">Get Plan on Telegram <i class="fa-solid fa-arrow-right ml-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            function closeMenu() {
-                mobileMenu.classList.add('hidden');
-                menuIcon.classList.remove('fa-xmark');
-                menuIcon.classList.add('fa-bars');
-            }
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 bg-dark-bg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="text-center">
+        <h2 class="text-xs font-bold uppercase text-brand-orange tracking-widest">Common Questions</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold uppercase text-white mt-2">Frequently Asked Questions</p>
+      </div>
 
-            // Toggle Button Click
-            mobileBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                if (mobileMenu.classList.contains('hidden')) {
-                    openMenu();
-                } else {
-                    closeMenu();
-                }
-            });
+      <div class="space-y-4">
+        <!-- FAQ Item 1 -->
+        <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center text-sm font-bold text-white focus:outline-none">
+            <span>Where do in-person gym coaching sessions take place in Addis Ababa?</span>
+            <i class="fa-solid fa-chevron-down text-brand-orange transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-slate-300 leading-relaxed border-t border-dark-border/50 pt-4">
+            Sessions take place at fully equipped partner fitness hubs in primary sub-cities including Bole, Kazanchis, and Sarbet. Specific gym locations are scheduled based on client convenience during onboarding.
+          </div>
+        </div>
 
-            // Attach auto-close utility
-            setupAutoClose(mobileMenu, mobileBtn, () => {
-                if (!mobileMenu.classList.contains('hidden')) {
-                    closeMenu();
-                }
-            });
-        });
+        <!-- FAQ Item 2 -->
+        <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center text-sm font-bold text-white focus:outline-none">
+            <span>Can I follow the meal plans while eating local Ethiopian food?</span>
+            <i class="fa-solid fa-chevron-down text-brand-orange transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-slate-300 leading-relaxed border-t border-dark-border/50 pt-4">
+            Yes, absolutely. Coach Roba structures macronutrient targets around accessible local Ethiopian foods including teff injera, eggs, chicken, beef, shiro, lentil stews, and cottage cheese (ayib) so you can hit your targets seamlessly without strictly relying on expensive imported supplements.
+          </div>
+        </div>
 
-        /**
-         * Video Showcase Fit Mode Switcher
-         */
-        function setVideoFit(mode) {
-            const video = document.getElementById('roba-video');
-            const btnCover = document.getElementById('btn-fit-cover');
-            const btnContain = document.getElementById('btn-fit-contain');
+        <!-- FAQ Item 3 -->
+        <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center text-sm font-bold text-white focus:outline-none">
+            <span>How does the Woyyu Fitness Mobile App work?</span>
+            <i class="fa-solid fa-chevron-down text-brand-orange transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-slate-300 leading-relaxed border-t border-dark-border/50 pt-4">
+            The Woyyu Fitness App (developed by Horan Technologies) serves as your primary digital fitness portal. Once active, you receive custom progressive workout routines, daily calorie & macro targets, logging tools, and direct communication features with Coach Roba.
+          </div>
+        </div>
 
-            if (mode === 'object-contain') {
-                video.classList.remove('object-cover');
-                video.classList.add('object-contain');
-                
-                btnContain.classList.add('bg-brand-500', 'text-white', 'font-semibold');
-                btnContain.classList.remove('text-slate-400');
+        <!-- FAQ Item 4 -->
+        <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center text-sm font-bold text-white focus:outline-none">
+            <span>Is Coach Roba a lifetime natural athlete?</span>
+            <i class="fa-solid fa-chevron-down text-brand-orange transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-slate-300 leading-relaxed border-t border-dark-border/50 pt-4">
+            Yes. Coach Roba is a 100% lifetime natural fitness model and trainer. The coaching philosophy strictly emphasizes long-term health, biomechanically safe lifting form, optimized sleep, and progressive overload without performance-enhancing drugs.
+          </div>
+        </div>
 
-                btnCover.classList.remove('bg-brand-500', 'text-white', 'font-semibold');
-                btnCover.classList.add('text-slate-400');
-            } else {
-                video.classList.remove('object-contain');
-                video.classList.add('object-cover');
+        <!-- FAQ Item 5 -->
+        <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center text-sm font-bold text-white focus:outline-none">
+            <span>How do I get started with online or gym training?</span>
+            <i class="fa-solid fa-chevron-down text-brand-orange transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-slate-300 leading-relaxed border-t border-dark-border/50 pt-4">
+            Click any of the Telegram buttons on this page to launch the official Telegram Bot (@woyyu_fitness_bot) or call direct phone support at 0946 364 983 to discuss available slots.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                btnCover.classList.add('bg-brand-500', 'text-white', 'font-semibold');
-                btnCover.classList.remove('text-slate-400');
+  <!-- Footer -->
+  <footer class="bg-dark-card border-t border-dark-border py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div class="space-y-3 md:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-brand-orange flex items-center justify-center text-white text-base overflow-hidden">
+              <img src="logo.png" alt="Woyyu Fitness" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/100x100/131924/FF5722?text=W'">
+            </div>
+            <span class="text-base font-extrabold text-white tracking-tight">WOYYU FITNESS</span>
+          </div>
+          <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+            Building natural physiques across Ethiopia and worldwide through structured hypertrophy training, customized local nutrition plans, and smart app tracking.
+          </p>
+        </div>
 
-                btnContain.classList.remove('bg-brand-500', 'text-white', 'font-semibold');
-                btnContain.classList.add('text-slate-400');
-            }
-        }
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#about" class="hover:text-brand-orange transition-colors">About Coach Roba</a></li>
+            <li><a href="#app" class="hover:text-brand-orange transition-colors">Woyyu Mobile App</a></li>
+            <li><a href="#programs" class="hover:text-brand-orange transition-colors">Coaching Programs</a></li>
+            <li><a href="#calculator" class="hover:text-brand-orange transition-colors">Macro Calculator</a></li>
+          </ul>
+        </div>
 
-        /**
-         * Daily Calorie & Macro Calculator Logic
-         */
-        function calculateCalories(event) {
-            event.preventDefault();
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Contact & Support</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><i class="fa-solid fa-phone text-brand-orange mr-2"></i> 0946 364 983</li>
+            <li><i class="fa-brands fa-telegram text-brand-orange mr-2"></i> @woyyu_fitness_bot</li>
+            <li><i class="fa-brands fa-tiktok text-brand-orange mr-2"></i> @roba_udesa</li>
+            <li><i class="fa-solid fa-code text-brand-blue mr-2"></i> App by Horan Tech</li>
+          </ul>
+        </div>
+      </div>
 
-            const gender = document.querySelector('input[name="gender"]:checked').value;
-            const age = parseFloat(document.getElementById('calc-age').value);
-            const weight = parseFloat(document.getElementById('calc-weight').value);
-            const height = parseFloat(document.getElementById('calc-height').value);
-            const activity = parseFloat(document.getElementById('calc-activity').value);
-            const goal = document.getElementById('calc-goal').value;
+      <div class="border-t border-dark-border/60 pt-6 flex flex-col sm:flex-row justify-between items-center text-[11px] text-slate-500 gap-4">
+        <p>© 2026 Woyyu Fitness - Coach Roba. All rights reserved.</p>
+        <p>Designed & Developed for Horan Technologies Ecosystem.</p>
+      </div>
+    </div>
+  </footer>
 
-            // BMR using Mifflin-St Jeor Formula
-            let bmr = (10 * weight) + (6.25 * height) - (5 * age);
-            if (gender === 'male') {
-                bmr += 5;
-            } else {
-                bmr -= 161;
-            }
+  <!-- Dynamic Scripts -->
+  <script>
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-            // TDEE
-            let tdee = bmr * activity;
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });/**
+ * Attaches auto-close handlers for click outside, scroll, and touch drag gestures.
+ * 
+ * @param {HTMLElement} element - The target element (modal/drawer) to monitor.
+ * @param {Function} onClose - Callback triggered when a close action occurs.
+ * @returns {Function} Cleanup function to remove event listeners.
+ */
+function setupAutoClose(element, onClose) {
+  if (!element || typeof onClose !== 'function') return () => {};
 
-            // Adjust for fitness goal
-            let targetCalories = tdee;
-            let summaryText = 'Target for Maintenance';
+  let touchStartY = 0;
+  let touchStartX = 0;
 
-            if (goal === 'lose') {
-                targetCalories = tdee - 500;
-                summaryText = 'Target for Fat Loss & Deficit';
-            } else if (goal === 'gain') {
-                targetCalories = tdee + 300;
-                summaryText = 'Target for Lean Muscle Growth Surplus';
-            }
+  // 1. Click Outside Handler
+  const handleClickOutside = (event) => {
+    if (!element.contains(event.target)) {
+      onClose();
+    }
+  };
 
-            targetCalories = Math.round(targetCalories);
+  // 2. Auto-Close on Scroll
+  const handleScroll = (event) => {
+    // Prevent closing if scrolling happens inside the element itself
+    if (element.contains(event.target)) return;
+    onClose();
+  };
 
-            // Macros calculation (Protein 2.0g/kg, Fat 0.9g/kg, Carbs balance)
-            const proteinGrams = Math.round(weight * 2.0);
-            const fatGrams = Math.round((targetCalories * 0.25) / 9);
-            const carbGrams = Math.round((targetCalories - (proteinGrams * 4 + fatGrams * 9)) / 4);
+  // 3. Auto-Close on Touch Drag (Swipe Down / Out)
+  const handleTouchStart = (event) => {
+    touchStartY = event.touches[0].clientY;
+    touchStartX = event.touches[0].clientX;
+  };
 
-            // Render Output
-            document.getElementById('result-calories').textContent = targetCalories.toLocaleString() + ' kcal';
-            document.getElementById('result-summary').textContent = summaryText;
-            document.getElementById('result-protein').textContent = proteinGrams + 'g';
-            document.getElementById('result-carbs').textContent = carbGrams + 'g';
-            document.getElementById('result-fats').textContent = fatGrams + 'g';
+  const handleTouchMove = (event) => {
+    const currentY = event.touches[0].clientY;
+    const currentX = event.touches[0].clientX;
+    const deltaY = currentY - touchStartY;
+    const deltaX = currentX - touchStartX;
 
-            document.getElementById('calc-result').classList.remove('hidden');
-        }
+    // Trigger close if drag distance exceeds 60px vertically (downward swipe)
+    // or if the touch drag originated outside the element
+    if (!element.contains(event.target) || deltaY > 60) {
+      onClose();
+    }
+  };
 
-        /**
-         * FAQ Accordion Toggle
-         */
-        function toggleFaq(buttonElement) {
-            const answer = buttonElement.nextElementSibling;
-            const icon = buttonElement.querySelector('i');
+  // Register Event Listeners (using capture phase for scroll/touch)
+  document.addEventListener('pointerdown', handleClickOutside);
+  window.addEventListener('scroll', handleScroll, true);
+  document.addEventListener('touchstart', handleTouchStart, { passive: true });
+  document.addEventListener('touchmove', handleTouchMove, { passive: true });
 
-            if (answer.classList.contains('hidden')) {
-                answer.classList.remove('hidden');
-                icon.classList.add('rotate-180');
-            } else {
-                answer.classList.add('hidden');
-                icon.classList.remove('rotate-180');
-            }
-        }
-    </script>
+  // Return Cleanup Function
+  return function cleanup() {
+    document.removeEventListener('pointerdown', handleClickOutside);
+    window.removeEventListener('scroll', handleScroll, true);
+    document.removeEventListener('touchstart', handleTouchStart);
+    document.removeEventListener('touchmove', handleTouchMove);
+  };
+}
+
+    // FAQ Accordion Toggle
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('i');
+        
+        // Toggle current FAQ
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+
+    // Calorie & Macro Calculator Logic (Mifflin-St Jeor Equation)
+    function calculateMacros() {
+      const gender = document.querySelector('input[name="gender"]:checked').value;
+      const age = parseFloat(document.getElementById('calc-age').value) || 25;
+      const weight = parseFloat(document.getElementById('calc-weight').value) || 75;
+      const height = parseFloat(document.getElementById('calc-height').value) || 178;
+      const activity = parseFloat(document.getElementById('calc-activity').value) || 1.375;
+      const goal = document.getElementById('calc-goal').value;
+
+      // Basal Metabolic Rate (BMR)
+      let bmr = (10 * weight) + (6.25 * height) - (5 * age);
+      if (gender === 'male') {
+        bmr += 5;
+      } else {
+        bmr -= 161;
+      }
+
+      // Total Daily Energy Expenditure (TDEE)
+      let tdee = bmr * activity;
+
+      // Adjust for Fitness Goal
+      let targetCalories = tdee;
+      if (goal === 'lose') {
+        targetCalories = tdee * 0.80; // 20% deficit
+      } else if (goal === 'gain') {
+        targetCalories = tdee * 1.10; // 10% surplus
+      }
+
+      targetCalories = Math.round(targetCalories);
+
+      // Macro Calculation (Protein: 2.2g/kg, Fat: 25% of calories, Carbs: Remaining calories)
+      let proteinGrams = Math.round(weight * 2.2);
+      let fatCalories = targetCalories * 0.25;
+      let fatGrams = Math.round(fatCalories / 9);
+      
+      let proteinCalories = proteinGrams * 4;
+      let carbCalories = targetCalories - (proteinCalories + fatCalories);
+      let carbGrams = Math.max(0, Math.round(carbCalories / 4));
+
+      // Update UI
+      document.getElementById('res-calories').innerText = targetCalories.toLocaleString();
+      document.getElementById('res-protein').innerText = proteinGrams + 'g';
+      document.getElementById('res-carbs').innerText = carbGrams + 'g';
+      document.getElementById('res-fats').innerText = fatGrams + 'g';
+    }
+
+    // Initialize initial calculation on page load
+    window.addEventListener('DOMContentLoaded', calculateMacros);
+  </script>
+
 </body>
 </html>
